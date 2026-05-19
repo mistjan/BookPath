@@ -1,0 +1,106 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Work {
+  id                  String       @id @default(cuid())
+  slug                String       @unique
+  titleOriginal       String
+  titleTranslatedCn   String?
+  titleAliases        String[]
+  originalLanguage    String?
+  countryOrRegion     String?
+  firstPublishedYear  Int?
+  workType            WorkType
+  literaryCategory    String?
+  literarySubcategory String?
+  summaryShort        String?
+  status              PublishStatus @default(DRAFT)
+  reviewStatus        ReviewStatus  @default(AI_DRAFT)
+  aiGenerated         Boolean       @default(true)
+}
+
+model Movement {
+  id                      String        @id @default(cuid())
+  slug                    String        @unique
+  nameCn                  String
+  nameOriginal            String?
+  period                  String?
+  region                  String?
+  introForBeginner        String
+  historicalContext       String?
+  reactsAgainst           String?
+  keyFeatures             String[]
+  commonMisunderstandings String[]
+  beginnerWarning         String?
+  importance              String?
+  status                  PublishStatus @default(DRAFT)
+  reviewStatus            ReviewStatus  @default(AI_DRAFT)
+}
+
+model ReadingPath {
+  id                 String        @id @default(cuid())
+  slug               String        @unique
+  title              String
+  description        String
+  targetReader       String?
+  pathType           PathType
+  difficultyStart    Int?
+  difficultyEnd      Int?
+  estimatedBookCount Int?
+  status             PublishStatus @default(DRAFT)
+  reviewStatus       ReviewStatus  @default(AI_DRAFT)
+}
+
+model Award {
+  id                String  @id @default(cuid())
+  slug              String  @unique
+  nameCn            String
+  nameOriginal      String?
+  countryOrRegion   String?
+  foundedYear       Int?
+  awardType         String?
+  description       String?
+  selectionTendency String?
+  beginnerValue     String?
+  limitationNote    String?
+}
+
+enum WorkType {
+  NOVEL
+  NOVELLA
+  SHORT_STORY_COLLECTION
+  POETRY
+  DRAMA
+  ESSAY
+  NONFICTION
+  OTHER
+}
+
+enum PublishStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum ReviewStatus {
+  AI_DRAFT
+  NEEDS_REVIEW
+  REVIEWED
+  VERIFIED
+}
+
+enum PathType {
+  MOVEMENT
+  GENRE
+  THEME
+  AWARD
+  AUTHOR
+  REGION
+  BEGINNER
+}

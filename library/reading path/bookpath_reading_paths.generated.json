@@ -1,0 +1,1829 @@
+[
+  {
+    "title": "现代主义文学入门",
+    "description": "这条路径面向想理解 20 世纪文学变化，但不想一上来读高难度长篇的中文读者。安排上先从篇幅较短、处境感强的作品进入，再逐步转向心理时间、非线性叙事和语言实验，最后接触高难度现代主义核心文本。全路径共 7 部作品。",
+    "targetReader": "想理解 20 世纪文学变化，但不想一上来读高难度长篇的中文读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 5,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Metamorphosis",
+        "titleTranslatedCn": "变形记",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《变形记》放在第 1 步，是因为它能帮助读者在“现代主义文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为弗兰茨·卡夫卡，相关标签为现代主义、荒诞派。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Stranger",
+        "titleTranslatedCn": "局外人",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《局外人》放在第 2 步，是因为它能帮助读者在“现代主义文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "A Portrait of the Artist as a Young Man",
+        "titleTranslatedCn": "一个青年艺术家的画像",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《一个青年艺术家的画像》放在第 3 步，是因为它能帮助读者在“现代主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为詹姆斯·乔伊斯，相关标签为现代主义、成长小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Mrs Dalloway",
+        "titleTranslatedCn": "达洛维夫人",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《达洛维夫人》放在第 4 步，是因为它能帮助读者在“现代主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为弗吉尼亚·伍尔夫，相关标签为现代主义、意识流、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "To the Lighthouse",
+        "titleTranslatedCn": "到灯塔去",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《到灯塔去》放在第 5 步，是因为它能帮助读者在“现代主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为弗吉尼亚·伍尔夫，相关标签为现代主义、意识流、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Sound and the Fury",
+        "titleTranslatedCn": "喧哗与骚动",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《喧哗与骚动》放在第 6 步，是因为它能帮助读者在“现代主义文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为威廉·福克纳，相关标签为现代主义、意识流。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "Ulysses",
+        "titleTranslatedCn": "尤利西斯",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《尤利西斯》放在第 7 步，是因为它能帮助读者在“现代主义文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为詹姆斯·乔伊斯，相关标签为现代主义、意识流。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "意识流文学入门",
+    "description": "这条路径面向想理解心理时间、意识流动和非线性叙事的进阶读者。它从较容易感受到人物意识流动的文本开始，再进入心理时间、视角切换和复杂叙事结构，避免一开始就直接面对最高难度文本。全路径共 5 部作品。",
+    "targetReader": "想理解心理时间、意识流动和非线性叙事的进阶读者",
+    "difficultyStart": 2,
+    "difficultyEnd": 5,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Mrs Dalloway",
+        "titleTranslatedCn": "达洛维夫人",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《达洛维夫人》放在第 1 步，是因为它能帮助读者在“意识流文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为弗吉尼亚·伍尔夫，相关标签为现代主义、意识流、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "To the Lighthouse",
+        "titleTranslatedCn": "到灯塔去",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《到灯塔去》放在第 2 步，是因为它能帮助读者在“意识流文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为弗吉尼亚·伍尔夫，相关标签为现代主义、意识流、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "A Portrait of the Artist as a Young Man",
+        "titleTranslatedCn": "一个青年艺术家的画像",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《一个青年艺术家的画像》放在第 3 步，是因为它能帮助读者在“意识流文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为詹姆斯·乔伊斯，相关标签为现代主义、成长小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Sound and the Fury",
+        "titleTranslatedCn": "喧哗与骚动",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《喧哗与骚动》放在第 4 步，是因为它能帮助读者在“意识流文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为威廉·福克纳，相关标签为现代主义、意识流。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "Ulysses",
+        "titleTranslatedCn": "尤利西斯",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《尤利西斯》放在第 5 步，是因为它能帮助读者在“意识流文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为詹姆斯·乔伊斯，相关标签为现代主义、意识流。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "存在主义文学入门",
+    "description": "这条路径面向想通过小说理解荒诞、自由、责任和现代人处境的读者。它先让读者感受荒诞处境和个人选择，再进入责任、自由、孤独、罪责等更复杂的问题。全路径共 6 部作品。",
+    "targetReader": "想通过小说理解荒诞、自由、责任和现代人处境的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 5,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Stranger",
+        "titleTranslatedCn": "局外人",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《局外人》放在第 1 步，是因为它能帮助读者在“存在主义文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Plague",
+        "titleTranslatedCn": "鼠疫",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《鼠疫》放在第 2 步，是因为它能帮助读者在“存在主义文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Nausea",
+        "titleTranslatedCn": "恶心",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《恶心》放在第 3 步，是因为它能帮助读者在“存在主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为让-保罗·萨特，相关标签为存在主义文学、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Steppenwolf",
+        "titleTranslatedCn": "荒原狼",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《荒原狼》放在第 4 步，是因为它能帮助读者在“存在主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为赫尔曼·黑塞，相关标签为现代主义、存在主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Woman in the Dunes",
+        "titleTranslatedCn": "砂女",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《砂女》放在第 5 步，是因为它能帮助读者在“存在主义文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为安部公房，相关标签为存在主义文学、荒诞派、日本现代文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Brothers Karamazov",
+        "titleTranslatedCn": "卡拉马佐夫兄弟",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《卡拉马佐夫兄弟》放在第 6 步，是因为它能帮助读者在“存在主义文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为费奥多尔·陀思妥耶夫斯基，相关标签为现实主义、存在主义文学、哲学入门。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "荒诞派文学入门",
+    "description": "这条路径面向想理解荒诞感、无意义处境和反传统戏剧/小说的读者。它从清晰可感的荒诞处境开始，再进入制度、语言、等待、失败和无法解释的世界秩序。全路径共 6 部作品。",
+    "targetReader": "想理解荒诞感、无意义处境和反传统戏剧/小说的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 5,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Metamorphosis",
+        "titleTranslatedCn": "变形记",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《变形记》放在第 1 步，是因为它能帮助读者在“荒诞派文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为弗兰茨·卡夫卡，相关标签为现代主义、荒诞派。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Trial",
+        "titleTranslatedCn": "审判",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《审判》放在第 2 步，是因为它能帮助读者在“荒诞派文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为弗兰茨·卡夫卡，相关标签为现代主义、荒诞派。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Waiting for Godot",
+        "titleTranslatedCn": "等待戈多",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《等待戈多》放在第 3 步，是因为它能帮助读者在“荒诞派文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为萨缪尔·贝克特，相关标签为荒诞派、戏剧文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Plague",
+        "titleTranslatedCn": "鼠疫",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《鼠疫》放在第 4 步，是因为它能帮助读者在“荒诞派文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Woman in the Dunes",
+        "titleTranslatedCn": "砂女",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《砂女》放在第 5 步，是因为它能帮助读者在“荒诞派文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为安部公房，相关标签为存在主义文学、荒诞派、日本现代文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "Molloy",
+        "titleTranslatedCn": "莫洛伊",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《莫洛伊》放在第 6 步，是因为它能帮助读者在“荒诞派文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为萨缪尔·贝克特，相关标签为荒诞派、现代主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "魔幻现实主义入门",
+    "description": "这条路径面向想理解现实、神话、历史创伤和魔幻叙事如何共存的读者。它先建立现实与神话并置的阅读经验，再进入家族史、殖民历史、政治暴力和民族记忆交织的核心作品。全路径共 6 部作品。",
+    "targetReader": "想理解现实、神话、历史创伤和魔幻叙事如何共存的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The House of the Spirits",
+        "titleTranslatedCn": "幽灵之家",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《幽灵之家》放在第 1 步，是因为它能帮助读者在“魔幻现实主义入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为伊莎贝尔·阿连德，相关标签为魔幻现实主义、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Cien años de soledad",
+        "titleTranslatedCn": "百年孤独",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《百年孤独》放在第 2 步，是因为它能帮助读者在“魔幻现实主义入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为加西亚·马尔克斯，相关标签为魔幻现实主义、拉美文学爆炸。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Love in the Time of Cholera",
+        "titleTranslatedCn": "霍乱时期的爱情",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《霍乱时期的爱情》放在第 3 步，是因为它能帮助读者在“魔幻现实主义入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为加西亚·马尔克斯，相关标签为魔幻现实主义、拉美文学爆炸。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Master and Margarita",
+        "titleTranslatedCn": "大师和玛格丽特",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《大师和玛格丽特》放在第 4 步，是因为它能帮助读者在“魔幻现实主义入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为米哈伊尔·布尔加科夫，相关标签为魔幻现实主义、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "Midnight's Children",
+        "titleTranslatedCn": "午夜之子",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《午夜之子》放在第 5 步，是因为它能帮助读者在“魔幻现实主义入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为萨尔曼·拉什迪，相关标签为后殖民文学、魔幻现实主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Tin Drum",
+        "titleTranslatedCn": "铁皮鼓",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《铁皮鼓》放在第 6 步，是因为它能帮助读者在“魔幻现实主义入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为君特·格拉斯，相关标签为魔幻现实主义、后现代主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "拉美文学爆炸入门",
+    "description": "这条路径面向想从代表性作品理解拉美 20 世纪文学高峰的读者。它从短篇和结构实验进入，再接触拉美文学爆炸中关于历史、城市、家族和叙事形式的代表性作品。全路径共 5 部作品。",
+    "targetReader": "想从代表性作品理解拉美 20 世纪文学高峰的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 5,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Ficciones",
+        "titleTranslatedCn": "虚构集",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《虚构集》放在第 1 步，是因为它能帮助读者在“拉美文学爆炸入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为豪尔赫·路易斯·博尔赫斯，相关标签为后现代主义、魔幻现实主义、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Hopscotch",
+        "titleTranslatedCn": "跳房子",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《跳房子》放在第 2 步，是因为它能帮助读者在“拉美文学爆炸入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为胡利奥·科塔萨尔，相关标签为拉美文学爆炸、后现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Cien años de soledad",
+        "titleTranslatedCn": "百年孤独",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《百年孤独》放在第 3 步，是因为它能帮助读者在“拉美文学爆炸入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为加西亚·马尔克斯，相关标签为魔幻现实主义、拉美文学爆炸。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Love in the Time of Cholera",
+        "titleTranslatedCn": "霍乱时期的爱情",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《霍乱时期的爱情》放在第 4 步，是因为它能帮助读者在“拉美文学爆炸入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为加西亚·马尔克斯，相关标签为魔幻现实主义、拉美文学爆炸。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "2666",
+        "titleTranslatedCn": "2666",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《2666》放在第 5 步，是因为它能帮助读者在“拉美文学爆炸入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为罗贝托·波拉尼奥，相关标签为后现代主义、拉美文学爆炸。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "后现代主义文学入门",
+    "description": "这条路径面向想理解元小说、碎片化、互文和叙事实验的读者。安排上先从篇幅较短、处境感强的作品进入，再逐步转向心理时间、非线性叙事和语言实验，最后接触高难度现代主义核心文本。全路径共 6 部作品。",
+    "targetReader": "想理解元小说、碎片化、互文和叙事实验的读者",
+    "difficultyStart": 2,
+    "difficultyEnd": 5,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Ficciones",
+        "titleTranslatedCn": "虚构集",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《虚构集》放在第 1 步，是因为它能帮助读者在“后现代主义文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为豪尔赫·路易斯·博尔赫斯，相关标签为后现代主义、魔幻现实主义、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Invisible Cities",
+        "titleTranslatedCn": "看不见的城市",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《看不见的城市》放在第 2 步，是因为它能帮助读者在“后现代主义文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为伊塔洛·卡尔维诺，相关标签为后现代主义、元小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "If on a winter's night a traveler",
+        "titleTranslatedCn": "如果在冬夜，一个旅人",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《如果在冬夜，一个旅人》放在第 3 步，是因为它能帮助读者在“后现代主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为伊塔洛·卡尔维诺，相关标签为后现代主义、元小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Name of the Rose",
+        "titleTranslatedCn": "玫瑰的名字",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《玫瑰的名字》放在第 4 步，是因为它能帮助读者在“后现代主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为翁贝托·埃科，相关标签为后现代主义、推理小说、元小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "Slaughterhouse-Five",
+        "titleTranslatedCn": "五号屠场",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《五号屠场》放在第 5 步，是因为它能帮助读者在“后现代主义文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为库尔特·冯内古特，相关标签为黑色幽默、后现代主义、战争文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "Infinite Jest",
+        "titleTranslatedCn": "无尽的玩笑",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《无尽的玩笑》放在第 6 步，是因为它能帮助读者在“后现代主义文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为大卫·福斯特·华莱士，相关标签为后现代主义、黑色幽默。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "黑色幽默入门",
+    "description": "这条路径面向想读荒诞、讽刺、战争和现代制度批判的读者。它先让读者习惯用荒诞和笑处理灾难、战争与制度困境，再扩展到不同文化中的讽刺和反讽写法。全路径共 6 部作品。",
+    "targetReader": "想读荒诞、讽刺、战争和现代制度批判的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Cat's Cradle",
+        "titleTranslatedCn": "猫的摇篮",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《猫的摇篮》放在第 1 步，是因为它能帮助读者在“黑色幽默入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为库尔特·冯内古特，相关标签为黑色幽默、后现代主义、科幻文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Slaughterhouse-Five",
+        "titleTranslatedCn": "五号屠场",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《五号屠场》放在第 2 步，是因为它能帮助读者在“黑色幽默入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为库尔特·冯内古特，相关标签为黑色幽默、后现代主义、战争文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Catch-22",
+        "titleTranslatedCn": "第二十二条军规",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《第二十二条军规》放在第 3 步，是因为它能帮助读者在“黑色幽默入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为约瑟夫·海勒，相关标签为黑色幽默、战争文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Master and Margarita",
+        "titleTranslatedCn": "大师和玛格丽特",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《大师和玛格丽特》放在第 4 步，是因为它能帮助读者在“黑色幽默入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为米哈伊尔·布尔加科夫，相关标签为魔幻现实主义、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "兄弟",
+        "titleTranslatedCn": "兄弟",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《兄弟》放在第 5 步，是因为它能帮助读者在“黑色幽默入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为余华，相关标签为中国当代文学、黑色幽默。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "黄金时代",
+        "titleTranslatedCn": "黄金时代",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《黄金时代》放在第 6 步，是因为它能帮助读者在“黑色幽默入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为王小波，相关标签为中国当代文学、黑色幽默。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "女性主义文学入门",
+    "description": "这条路径面向想从文学理解女性经验、性别结构和身体处境的读者。它从女性成长、身体经验和家庭结构进入，再扩展到制度压迫、心理困境和身份政治。全路径共 7 部作品。",
+    "targetReader": "想从文学理解女性经验、性别结构和身体处境的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Jane Eyre",
+        "titleTranslatedCn": "简·爱",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《简·爱》放在第 1 步，是因为它能帮助读者在“女性主义文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为夏洛蒂·勃朗特，相关标签为现实主义、女性主义文学、成长小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Yellow Wallpaper",
+        "titleTranslatedCn": "黄色墙纸",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《黄色墙纸》放在第 2 步，是因为它能帮助读者在“女性主义文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为夏洛特·珀金斯·吉尔曼，相关标签为女性主义文学、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Mrs Dalloway",
+        "titleTranslatedCn": "达洛维夫人",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《达洛维夫人》放在第 3 步，是因为它能帮助读者在“女性主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为弗吉尼亚·伍尔夫，相关标签为现代主义、意识流、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Bell Jar",
+        "titleTranslatedCn": "钟形罩",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《钟形罩》放在第 4 步，是因为它能帮助读者在“女性主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为西尔维娅·普拉斯，相关标签为女性主义文学、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Handmaid's Tale",
+        "titleTranslatedCn": "使女的故事",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《使女的故事》放在第 5 步，是因为它能帮助读者在“女性主义文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为玛格丽特·阿特伍德，相关标签为女性主义文学、反乌托邦文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Vegetarian",
+        "titleTranslatedCn": "素食者",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《素食者》放在第 6 步，是因为它能帮助读者在“女性主义文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为韩江，相关标签为女性主义文学、创伤文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "The Color Purple",
+        "titleTranslatedCn": "紫颜色",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《紫颜色》放在第 7 步，是因为它能帮助读者在“女性主义文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为艾丽斯·沃克，相关标签为女性主义文学、后殖民文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "后殖民文学入门",
+    "description": "这条路径面向想理解殖民历史、身份、语言和文化断裂的读者。它先建立殖民历史和身份断裂的基本阅读经验，再进入语言、记忆、阶级、帝国遗产和移民经验。全路径共 6 部作品。",
+    "targetReader": "想理解殖民历史、身份、语言和文化断裂的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Things Fall Apart",
+        "titleTranslatedCn": "瓦解",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《瓦解》放在第 1 步，是因为它能帮助读者在“后殖民文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为钦努阿·阿契贝，相关标签为后殖民文学、现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Wide Sargasso Sea",
+        "titleTranslatedCn": "藻海无边",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《藻海无边》放在第 2 步，是因为它能帮助读者在“后殖民文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为简·里斯，相关标签为后殖民文学、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Midnight's Children",
+        "titleTranslatedCn": "午夜之子",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《午夜之子》放在第 3 步，是因为它能帮助读者在“后殖民文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为萨尔曼·拉什迪，相关标签为后殖民文学、魔幻现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The God of Small Things",
+        "titleTranslatedCn": "微物之神",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《微物之神》放在第 4 步，是因为它能帮助读者在“后殖民文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为阿兰达蒂·洛伊，相关标签为后殖民文学、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Remains of the Day",
+        "titleTranslatedCn": "长日将尽",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《长日将尽》放在第 5 步，是因为它能帮助读者在“后殖民文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为石黑一雄，相关标签为后殖民文学、现实主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Brief Wondrous Life of Oscar Wao",
+        "titleTranslatedCn": "奥斯卡·瓦奥短暂而奇妙的一生",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《奥斯卡·瓦奥短暂而奇妙的一生》放在第 6 步，是因为它能帮助读者在“后殖民文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为朱诺·迪亚斯，相关标签为后殖民文学、魔幻现实主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "赛博朋克入门",
+    "description": "这条路径面向想理解高科技、低生活、资本城市和数字身份的读者。它按照由易到难的顺序安排候选作品，先建立入口经验，再进入核心文本，最后扩展到更复杂或更具挑战性的作品。全路径共 3 部作品。",
+    "targetReader": "想理解高科技、低生活、资本城市和数字身份的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Do Androids Dream of Electric Sheep?",
+        "titleTranslatedCn": "仿生人会梦见电子羊吗？",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《仿生人会梦见电子羊吗？》放在第 1 步，是因为它能帮助读者在“赛博朋克入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为菲利普·K·迪克，相关标签为科幻文学、赛博朋克。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Neuromancer",
+        "titleTranslatedCn": "神经漫游者",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《神经漫游者》放在第 2 步，是因为它能帮助读者在“赛博朋克入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为威廉·吉布森，相关标签为赛博朋克、科幻文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Snow Crash",
+        "titleTranslatedCn": "雪崩",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《雪崩》放在第 3 步，是因为它能帮助读者在“赛博朋克入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为尼尔·斯蒂芬森，相关标签为赛博朋克、科幻文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "科幻文学入门",
+    "description": "这条路径面向想从容易进入的作品理解科幻文学核心问题的读者。它从科幻的基本设问进入：技术改变什么、人类如何认识自身、社会制度如何被重新想象，再逐步扩展到哲学、生态和数字世界。全路径共 8 部作品。",
+    "targetReader": "想从容易进入的作品理解科幻文学核心问题的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Time Machine",
+        "titleTranslatedCn": "时间机器",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《时间机器》放在第 1 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为赫伯特·乔治·威尔斯，相关标签为科幻文学、反乌托邦文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Frankenstein; or, The Modern Prometheus",
+        "titleTranslatedCn": "弗兰肯斯坦",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《弗兰肯斯坦》放在第 2 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为玛丽·雪莱，相关标签为哥特小说、科幻文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Fahrenheit 451",
+        "titleTranslatedCn": "华氏451度",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《华氏451度》放在第 3 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为雷·布拉德伯里，相关标签为科幻文学、反乌托邦文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Solaris",
+        "titleTranslatedCn": "索拉里斯星",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《索拉里斯星》放在第 4 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为斯坦尼斯瓦夫·莱姆，相关标签为科幻文学、哲学入门。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "Dune",
+        "titleTranslatedCn": "沙丘",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《沙丘》放在第 5 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为弗兰克·赫伯特，相关标签为科幻文学、生态文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Left Hand of Darkness",
+        "titleTranslatedCn": "黑暗的左手",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《黑暗的左手》放在第 6 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为厄休拉·K·勒古恩，相关标签为科幻文学、女性主义文学、软科幻。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "Neuromancer",
+        "titleTranslatedCn": "神经漫游者",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《神经漫游者》放在第 7 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为威廉·吉布森，相关标签为赛博朋克、科幻文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 8,
+        "titleOriginal": "The Three-Body Problem",
+        "titleTranslatedCn": "三体",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《三体》放在第 8 步，是因为它能帮助读者在“科幻文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为刘慈欣，相关标签为科幻文学、硬科幻。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "反乌托邦文学入门",
+    "description": "这条路径面向想读权力、控制、技术和社会制度想象的读者。它从清晰的政治寓言进入，再逐步接触技术控制、消费社会、身体规训、记忆管理和灾后世界。全路径共 7 部作品。",
+    "targetReader": "想读权力、控制、技术和社会制度想象的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Animal Farm",
+        "titleTranslatedCn": "动物农场",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《动物农场》放在第 1 步，是因为它能帮助读者在“反乌托邦文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为乔治·奥威尔，相关标签为反乌托邦文学、讽刺文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Nineteen Eighty-Four",
+        "titleTranslatedCn": "一九八四",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《一九八四》放在第 2 步，是因为它能帮助读者在“反乌托邦文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为乔治·奥威尔，相关标签为反乌托邦文学、科幻文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Brave New World",
+        "titleTranslatedCn": "美丽新世界",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《美丽新世界》放在第 3 步，是因为它能帮助读者在“反乌托邦文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为阿道司·赫胥黎，相关标签为反乌托邦文学、科幻文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Fahrenheit 451",
+        "titleTranslatedCn": "华氏451度",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《华氏451度》放在第 4 步，是因为它能帮助读者在“反乌托邦文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为雷·布拉德伯里，相关标签为科幻文学、反乌托邦文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Handmaid's Tale",
+        "titleTranslatedCn": "使女的故事",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《使女的故事》放在第 5 步，是因为它能帮助读者在“反乌托邦文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为玛格丽特·阿特伍德，相关标签为女性主义文学、反乌托邦文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "Never Let Me Go",
+        "titleTranslatedCn": "别让我走",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《别让我走》放在第 6 步，是因为它能帮助读者在“反乌托邦文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为石黑一雄，相关标签为科幻文学、反乌托邦文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "The Road",
+        "titleTranslatedCn": "路",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《路》放在第 7 步，是因为它能帮助读者在“反乌托邦文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为科马克·麦卡锡，相关标签为反乌托邦文学、生态文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "推理小说入门",
+    "description": "这条路径面向想从经典侦探、硬汉派和社会派理解推理类型的读者。它先建立侦探小说的谜题和推理规则，再进入硬汉派、心理犯罪和跨类型推理。全路径共 6 部作品。",
+    "targetReader": "想从经典侦探、硬汉派和社会派理解推理类型的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Hound of the Baskervilles",
+        "titleTranslatedCn": "巴斯克维尔的猎犬",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《巴斯克维尔的猎犬》放在第 1 步，是因为它能帮助读者在“推理小说入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为阿瑟·柯南·道尔，相关标签为推理小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Murder of Roger Ackroyd",
+        "titleTranslatedCn": "罗杰疑案",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《罗杰疑案》放在第 2 步，是因为它能帮助读者在“推理小说入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为阿加莎·克里斯蒂，相关标签为推理小说、本格推理。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "The Maltese Falcon",
+        "titleTranslatedCn": "马耳他之鹰",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《马耳他之鹰》放在第 3 步，是因为它能帮助读者在“推理小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为达希尔·哈米特，相关标签为推理小说、硬汉派侦探小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Big Sleep",
+        "titleTranslatedCn": "长眠不醒",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《长眠不醒》放在第 4 步，是因为它能帮助读者在“推理小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为雷蒙德·钱德勒，相关标签为推理小说、硬汉派侦探小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Name of the Rose",
+        "titleTranslatedCn": "玫瑰的名字",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《玫瑰的名字》放在第 5 步，是因为它能帮助读者在“推理小说入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为翁贝托·埃科，相关标签为后现代主义、推理小说、元小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Talented Mr. Ripley",
+        "titleTranslatedCn": "天才雷普利",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《天才雷普利》放在第 6 步，是因为它能帮助读者在“推理小说入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为帕特里夏·海史密斯，相关标签为犯罪小说、推理小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "硬汉派侦探小说入门",
+    "description": "这条路径面向想读冷峻城市、犯罪气息和美国硬汉侦探传统的读者。它按照由易到难的顺序安排候选作品，先建立入口经验，再进入核心文本，最后扩展到更复杂或更具挑战性的作品。全路径共 3 部作品。",
+    "targetReader": "想读冷峻城市、犯罪气息和美国硬汉侦探传统的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Maltese Falcon",
+        "titleTranslatedCn": "马耳他之鹰",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《马耳他之鹰》放在第 1 步，是因为它能帮助读者在“硬汉派侦探小说入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为达希尔·哈米特，相关标签为推理小说、硬汉派侦探小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Big Sleep",
+        "titleTranslatedCn": "长眠不醒",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《长眠不醒》放在第 2 步，是因为它能帮助读者在“硬汉派侦探小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为雷蒙德·钱德勒，相关标签为推理小说、硬汉派侦探小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "The Postman Always Rings Twice",
+        "titleTranslatedCn": "邮差总按两遍铃",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《邮差总按两遍铃》放在第 3 步，是因为它能帮助读者在“硬汉派侦探小说入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为詹姆斯·M·凯恩，相关标签为犯罪小说、硬汉派侦探小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "哥特小说入门",
+    "description": "这条路径面向想理解恐怖、古堡、欲望、禁忌和现代恐怖源流的读者。它按照由易到难的顺序安排候选作品，先建立入口经验，再进入核心文本，最后扩展到更复杂或更具挑战性的作品。全路径共 5 部作品。",
+    "targetReader": "想理解恐怖、古堡、欲望、禁忌和现代恐怖源流的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Frankenstein; or, The Modern Prometheus",
+        "titleTranslatedCn": "弗兰肯斯坦",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《弗兰肯斯坦》放在第 1 步，是因为它能帮助读者在“哥特小说入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为玛丽·雪莱，相关标签为哥特小说、科幻文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Wuthering Heights",
+        "titleTranslatedCn": "呼啸山庄",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《呼啸山庄》放在第 2 步，是因为它能帮助读者在“哥特小说入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为艾米莉·勃朗特，相关标签为哥特小说、浪漫主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "The Strange Case of Dr Jekyll and Mr Hyde",
+        "titleTranslatedCn": "化身博士",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《化身博士》放在第 3 步，是因为它能帮助读者在“哥特小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为罗伯特·路易斯·史蒂文森，相关标签为哥特小说、科幻文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Dracula",
+        "titleTranslatedCn": "德古拉",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《德古拉》放在第 4 步，是因为它能帮助读者在“哥特小说入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为布拉姆·斯托克，相关标签为哥特小说、恐怖文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Picture of Dorian Gray",
+        "titleTranslatedCn": "道林·格雷的画像",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《道林·格雷的画像》放在第 5 步，是因为它能帮助读者在“哥特小说入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为奥斯卡·王尔德，相关标签为唯美主义、哥特小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "外国文学新手入门",
+    "description": "这条路径面向想从较容易进入的外国经典开始读的中文读者。它按照由易到难的顺序安排候选作品，先建立入口经验，再进入核心文本，最后扩展到更复杂或更具挑战性的作品。全路径共 7 部作品。",
+    "targetReader": "想从较容易进入的外国经典开始读的中文读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Little Prince",
+        "titleTranslatedCn": "小王子",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《小王子》放在第 1 步，是因为它能帮助读者在“外国文学新手入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为安托万·德·圣-埃克苏佩里，相关标签为儿童文学、哲学入门。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Stranger",
+        "titleTranslatedCn": "局外人",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《局外人》放在第 2 步，是因为它能帮助读者在“外国文学新手入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Animal Farm",
+        "titleTranslatedCn": "动物农场",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《动物农场》放在第 3 步，是因为它能帮助读者在“外国文学新手入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为乔治·奥威尔，相关标签为反乌托邦文学、讽刺文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Old Man and the Sea",
+        "titleTranslatedCn": "老人与海",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《老人与海》放在第 4 步，是因为它能帮助读者在“外国文学新手入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为欧内斯特·海明威，相关标签为现代主义、诺贝尔文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Great Gatsby",
+        "titleTranslatedCn": "了不起的盖茨比",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《了不起的盖茨比》放在第 5 步，是因为它能帮助读者在“外国文学新手入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为F·斯科特·菲茨杰拉德，相关标签为现代主义、现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "To Kill a Mockingbird",
+        "titleTranslatedCn": "杀死一只知更鸟",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《杀死一只知更鸟》放在第 6 步，是因为它能帮助读者在“外国文学新手入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为哈珀·李，相关标签为现实主义、成长小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "The Remains of the Day",
+        "titleTranslatedCn": "长日将尽",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《长日将尽》放在第 7 步，是因为它能帮助读者在“外国文学新手入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为石黑一雄，相关标签为后殖民文学、现实主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "诺贝尔文学奖入门",
+    "description": "这条路径面向想从诺奖作家中选择较容易进入作品的读者。它不按奖项名气排序，而按可读性、主题清晰度和文本难度递进，让读者先从较容易进入的获奖相关作品开始。全路径共 7 部作品。",
+    "targetReader": "想从诺奖作家中选择较容易进入作品的读者",
+    "difficultyStart": 2,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Stranger",
+        "titleTranslatedCn": "局外人",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《局外人》放在第 1 步，是因为它能帮助读者在“诺贝尔文学奖入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Plague",
+        "titleTranslatedCn": "鼠疫",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《鼠疫》放在第 2 步，是因为它能帮助读者在“诺贝尔文学奖入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "The Old Man and the Sea",
+        "titleTranslatedCn": "老人与海",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《老人与海》放在第 3 步，是因为它能帮助读者在“诺贝尔文学奖入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为欧内斯特·海明威，相关标签为现代主义、诺贝尔文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "One Day in the Life of Ivan Denisovich",
+        "titleTranslatedCn": "伊凡·杰尼索维奇的一天",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《伊凡·杰尼索维奇的一天》放在第 4 步，是因为它能帮助读者在“诺贝尔文学奖入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为亚历山大·索尔仁尼琴，相关标签为现实主义、纪实文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "Blindness",
+        "titleTranslatedCn": "失明症漫记",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《失明症漫记》放在第 5 步，是因为它能帮助读者在“诺贝尔文学奖入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为若泽·萨拉马戈，相关标签为寓言文学、后现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Remains of the Day",
+        "titleTranslatedCn": "长日将尽",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《长日将尽》放在第 6 步，是因为它能帮助读者在“诺贝尔文学奖入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为石黑一雄，相关标签为后殖民文学、现实主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "The Tin Drum",
+        "titleTranslatedCn": "铁皮鼓",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《铁皮鼓》放在第 7 步，是因为它能帮助读者在“诺贝尔文学奖入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为君特·格拉斯，相关标签为魔幻现实主义、后现代主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "布克奖阅读入门",
+    "description": "这条路径面向想通过布克奖理解英语小说当代表达的读者。它不按奖项名气排序，而按可读性、主题清晰度和文本难度递进，让读者先从较容易进入的获奖相关作品开始。全路径共 5 部作品。",
+    "targetReader": "想通过布克奖理解英语小说当代表达的读者",
+    "difficultyStart": 2,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Remains of the Day",
+        "titleTranslatedCn": "长日将尽",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《长日将尽》放在第 1 步，是因为它能帮助读者在“布克奖阅读入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为石黑一雄，相关标签为后殖民文学、现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Midnight's Children",
+        "titleTranslatedCn": "午夜之子",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《午夜之子》放在第 2 步，是因为它能帮助读者在“布克奖阅读入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为萨尔曼·拉什迪，相关标签为后殖民文学、魔幻现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "The God of Small Things",
+        "titleTranslatedCn": "微物之神",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《微物之神》放在第 3 步，是因为它能帮助读者在“布克奖阅读入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为阿兰达蒂·洛伊，相关标签为后殖民文学、女性主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Wolf Hall",
+        "titleTranslatedCn": "狼厅",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《狼厅》放在第 4 步，是因为它能帮助读者在“布克奖阅读入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为希拉里·曼特尔，相关标签为历史写作、布克奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Sense of an Ending",
+        "titleTranslatedCn": "终结的感觉",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《终结的感觉》放在第 5 步，是因为它能帮助读者在“布克奖阅读入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为朱利安·巴恩斯，相关标签为后现代主义、布克奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "中国现代文学入门",
+    "description": "这条路径面向想理解五四以来中文现代文学形成过程的读者。它按阅读门槛和文学史理解顺序组织作品，先建立基本语感和时代处境，再进入更复杂的历史、地域、叙事和现实经验。全路径共 7 部作品。",
+    "targetReader": "想理解五四以来中文现代文学形成过程的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "呐喊",
+        "titleTranslatedCn": "呐喊",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《呐喊》放在第 1 步，是因为它能帮助读者在“中国现代文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为鲁迅，相关标签为中国现代文学、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "彷徨",
+        "titleTranslatedCn": "彷徨",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《彷徨》放在第 2 步，是因为它能帮助读者在“中国现代文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为鲁迅，相关标签为中国现代文学、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "边城",
+        "titleTranslatedCn": "边城",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《边城》放在第 3 步，是因为它能帮助读者在“中国现代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为沈从文，相关标签为中国现代文学、乡土文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "骆驼祥子",
+        "titleTranslatedCn": "骆驼祥子",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《骆驼祥子》放在第 4 步，是因为它能帮助读者在“中国现代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为老舍，相关标签为中国现代文学、现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "家",
+        "titleTranslatedCn": "家",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《家》放在第 5 步，是因为它能帮助读者在“中国现代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为巴金，相关标签为中国现代文学、现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "围城",
+        "titleTranslatedCn": "围城",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《围城》放在第 6 步，是因为它能帮助读者在“中国现代文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为钱锺书，相关标签为中国现代文学、讽刺文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "倾城之恋",
+        "titleTranslatedCn": "倾城之恋",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《倾城之恋》放在第 7 步，是因为它能帮助读者在“中国现代文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为张爱玲，相关标签为中国现代文学、女性主义文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "鲁迅作品入门",
+    "description": "这条路径面向想进入鲁迅小说和现代中文文学起点的读者。它按阅读门槛和文学史理解顺序组织作品，先建立基本语感和时代处境，再进入更复杂的历史、地域、叙事和现实经验。全路径共 3 部作品。",
+    "targetReader": "想进入鲁迅小说和现代中文文学起点的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "呐喊",
+        "titleTranslatedCn": "呐喊",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《呐喊》放在第 1 步，是因为它能帮助读者在“鲁迅作品入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为鲁迅，相关标签为中国现代文学、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "彷徨",
+        "titleTranslatedCn": "彷徨",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《彷徨》放在第 2 步，是因为它能帮助读者在“鲁迅作品入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为鲁迅，相关标签为中国现代文学、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "故事新编",
+        "titleTranslatedCn": "故事新编",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《故事新编》放在第 3 步，是因为它能帮助读者在“鲁迅作品入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为鲁迅，相关标签为中国现代文学、短篇小说、后现代主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "中国现当代文学入门",
+    "description": "这条路径面向想从中国现代到当代建立基本阅读路径的读者。它按阅读门槛和文学史理解顺序组织作品，先建立基本语感和时代处境，再进入更复杂的历史、地域、叙事和现实经验。全路径共 8 部作品。",
+    "targetReader": "想从中国现代到当代建立基本阅读路径的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "呐喊",
+        "titleTranslatedCn": "呐喊",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《呐喊》放在第 1 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为鲁迅，相关标签为中国现代文学、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "边城",
+        "titleTranslatedCn": "边城",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《边城》放在第 2 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为沈从文，相关标签为中国现代文学、乡土文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "骆驼祥子",
+        "titleTranslatedCn": "骆驼祥子",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《骆驼祥子》放在第 3 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为老舍，相关标签为中国现代文学、现实主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "棋王",
+        "titleTranslatedCn": "棋王",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《棋王》放在第 4 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为阿城，相关标签为寻根文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "活着",
+        "titleTranslatedCn": "活着",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《活着》放在第 5 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为余华，相关标签为中国先锋文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "白鹿原",
+        "titleTranslatedCn": "白鹿原",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《白鹿原》放在第 6 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为陈忠实，相关标签为中国当代文学、家族史诗、茅盾文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "长恨歌",
+        "titleTranslatedCn": "长恨歌",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《长恨歌》放在第 7 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为王安忆，相关标签为中国当代文学、城市文学、茅盾文学奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 8,
+        "titleOriginal": "繁花",
+        "titleTranslatedCn": "繁花",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《繁花》放在第 8 步，是因为它能帮助读者在“中国现当代文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为金宇澄，相关标签为中国当代文学、城市文学、茅盾文学奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "中国先锋文学入门",
+    "description": "这条路径面向想理解 1980 年代以来叙事实验和历史暴力书写的读者。它按阅读门槛和文学史理解顺序组织作品，先建立基本语感和时代处境，再进入更复杂的历史、地域、叙事和现实经验。全路径共 6 部作品。",
+    "targetReader": "想理解 1980 年代以来叙事实验和历史暴力书写的读者",
+    "difficultyStart": 2,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "活着",
+        "titleTranslatedCn": "活着",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《活着》放在第 1 步，是因为它能帮助读者在“中国先锋文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为余华，相关标签为中国先锋文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "许三观卖血记",
+        "titleTranslatedCn": "许三观卖血记",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《许三观卖血记》放在第 2 步，是因为它能帮助读者在“中国先锋文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为余华，相关标签为中国先锋文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "妻妾成群",
+        "titleTranslatedCn": "妻妾成群",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《妻妾成群》放在第 3 步，是因为它能帮助读者在“中国先锋文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为苏童，相关标签为中国先锋文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "米",
+        "titleTranslatedCn": "米",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《米》放在第 4 步，是因为它能帮助读者在“中国先锋文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为苏童，相关标签为中国先锋文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "马桥词典",
+        "titleTranslatedCn": "马桥词典",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《马桥词典》放在第 5 步，是因为它能帮助读者在“中国先锋文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为韩少功，相关标签为寻根文学、后现代主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "红高粱家族",
+        "titleTranslatedCn": "红高粱家族",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《红高粱家族》放在第 6 步，是因为它能帮助读者在“中国先锋文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为莫言，相关标签为寻根文学、魔幻现实主义、中国当代文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "寻根文学入门",
+    "description": "这条路径面向想理解 1980 年代文学如何重新寻找民间、历史和地域文化的读者。它按阅读门槛和文学史理解顺序组织作品，先建立基本语感和时代处境，再进入更复杂的历史、地域、叙事和现实经验。全路径共 5 部作品。",
+    "targetReader": "想理解 1980 年代文学如何重新寻找民间、历史和地域文化的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "棋王",
+        "titleTranslatedCn": "棋王",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《棋王》放在第 1 步，是因为它能帮助读者在“寻根文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为阿城，相关标签为寻根文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "小鲍庄",
+        "titleTranslatedCn": "小鲍庄",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《小鲍庄》放在第 2 步，是因为它能帮助读者在“寻根文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为王安忆，相关标签为寻根文学、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "红高粱家族",
+        "titleTranslatedCn": "红高粱家族",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《红高粱家族》放在第 3 步，是因为它能帮助读者在“寻根文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为莫言，相关标签为寻根文学、魔幻现实主义、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "马桥词典",
+        "titleTranslatedCn": "马桥词典",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《马桥词典》放在第 4 步，是因为它能帮助读者在“寻根文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为韩少功，相关标签为寻根文学、后现代主义。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "尘埃落定",
+        "titleTranslatedCn": "尘埃落定",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《尘埃落定》放在第 5 步，是因为它能帮助读者在“寻根文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为阿来，相关标签为中国当代文学、寻根文学、茅盾文学奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "新写实小说入门",
+    "description": "这条路径面向想理解日常生活、普通人困境和反英雄叙事的读者。它按阅读门槛和文学史理解顺序组织作品，先建立基本语感和时代处境，再进入更复杂的历史、地域、叙事和现实经验。全路径共 3 部作品。",
+    "targetReader": "想理解日常生活、普通人困境和反英雄叙事的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "一句顶一万句",
+        "titleTranslatedCn": "一句顶一万句",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《一句顶一万句》放在第 1 步，是因为它能帮助读者在“新写实小说入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为刘震云，相关标签为中国当代文学、新写实小说、茅盾文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "人生",
+        "titleTranslatedCn": "人生",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《人生》放在第 2 步，是因为它能帮助读者在“新写实小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为路遥，相关标签为现实主义、中国当代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "推拿",
+        "titleTranslatedCn": "推拿",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《推拿》放在第 3 步，是因为它能帮助读者在“新写实小说入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为毕飞宇，相关标签为中国当代文学、茅盾文学奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "茅盾文学奖入门",
+    "description": "这条路径面向想从中国长篇小说奖项中选择可进入作品的读者。它按阅读门槛和文学史理解顺序组织作品，先建立基本语感和时代处境，再进入更复杂的历史、地域、叙事和现实经验。全路径共 7 部作品。",
+    "targetReader": "想从中国长篇小说奖项中选择可进入作品的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "平凡的世界",
+        "titleTranslatedCn": "平凡的世界",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《平凡的世界》放在第 1 步，是因为它能帮助读者在“茅盾文学奖入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为路遥，相关标签为现实主义、中国当代文学、茅盾文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "白鹿原",
+        "titleTranslatedCn": "白鹿原",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《白鹿原》放在第 2 步，是因为它能帮助读者在“茅盾文学奖入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为陈忠实，相关标签为中国当代文学、家族史诗、茅盾文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "长恨歌",
+        "titleTranslatedCn": "长恨歌",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《长恨歌》放在第 3 步，是因为它能帮助读者在“茅盾文学奖入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为王安忆，相关标签为中国当代文学、城市文学、茅盾文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "尘埃落定",
+        "titleTranslatedCn": "尘埃落定",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《尘埃落定》放在第 4 步，是因为它能帮助读者在“茅盾文学奖入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为阿来，相关标签为中国当代文学、寻根文学、茅盾文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "额尔古纳河右岸",
+        "titleTranslatedCn": "额尔古纳河右岸",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《额尔古纳河右岸》放在第 5 步，是因为它能帮助读者在“茅盾文学奖入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为迟子建，相关标签为中国当代文学、生态文学、茅盾文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "繁花",
+        "titleTranslatedCn": "繁花",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《繁花》放在第 6 步，是因为它能帮助读者在“茅盾文学奖入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为金宇澄，相关标签为中国当代文学、城市文学、茅盾文学奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "一句顶一万句",
+        "titleTranslatedCn": "一句顶一万句",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《一句顶一万句》放在第 7 步，是因为它能帮助读者在“茅盾文学奖入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为刘震云，相关标签为中国当代文学、新写实小说、茅盾文学奖阅读。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "日本现代文学入门",
+    "description": "这条路径面向想从日本现代小说进入孤独、伦理、美学和战后精神经验的读者。它从短篇和心理小说进入，再接触战后精神、美学困境、存在处境与现代都市经验。全路径共 7 部作品。",
+    "targetReader": "想从日本现代小说进入孤独、伦理、美学和战后精神经验的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "Rashōmon",
+        "titleTranslatedCn": "罗生门",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《罗生门》放在第 1 步，是因为它能帮助读者在“日本现代文学入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为芥川龙之介，相关标签为短篇小说、日本现代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Kokoro",
+        "titleTranslatedCn": "心",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《心》放在第 2 步，是因为它能帮助读者在“日本现代文学入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为夏目漱石，相关标签为日本现代文学、心理小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Ningen Shikkaku",
+        "titleTranslatedCn": "人间失格",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《人间失格》放在第 3 步，是因为它能帮助读者在“日本现代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为太宰治，相关标签为日本无赖派、存在主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Yukiguni",
+        "titleTranslatedCn": "雪国",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《雪国》放在第 4 步，是因为它能帮助读者在“日本现代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为川端康成，相关标签为日本现代文学、诺贝尔文学奖阅读。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "Kinkakuji",
+        "titleTranslatedCn": "金阁寺",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《金阁寺》放在第 5 步，是因为它能帮助读者在“日本现代文学入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为三岛由纪夫，相关标签为日本现代文学、美学小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Woman in the Dunes",
+        "titleTranslatedCn": "砂女",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《砂女》放在第 6 步，是因为它能帮助读者在“日本现代文学入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为安部公房，相关标签为存在主义文学、荒诞派、日本现代文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "Norwegian Wood",
+        "titleTranslatedCn": "挪威的森林",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《挪威的森林》放在第 7 步，是因为它能帮助读者在“日本现代文学入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为村上春树，相关标签为日本现代文学、成长小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "短篇小说入门",
+    "description": "这条路径面向想通过短篇理解现代小说技巧和文学密度的读者。它按照由易到难的顺序安排候选作品，先建立入口经验，再进入核心文本，最后扩展到更复杂或更具挑战性的作品。全路径共 7 部作品。",
+    "targetReader": "想通过短篇理解现代小说技巧和文学密度的读者",
+    "difficultyStart": 1,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Metamorphosis",
+        "titleTranslatedCn": "变形记",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《变形记》放在第 1 步，是因为它能帮助读者在“短篇小说入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为弗兰茨·卡夫卡，相关标签为现代主义、荒诞派。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Ficciones",
+        "titleTranslatedCn": "虚构集",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《虚构集》放在第 2 步，是因为它能帮助读者在“短篇小说入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为豪尔赫·路易斯·博尔赫斯，相关标签为后现代主义、魔幻现实主义、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "The Aleph",
+        "titleTranslatedCn": "阿莱夫",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《阿莱夫》放在第 3 步，是因为它能帮助读者在“短篇小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为豪尔赫·路易斯·博尔赫斯，相关标签为后现代主义、魔幻现实主义、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "The Yellow Wallpaper",
+        "titleTranslatedCn": "黄色墙纸",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《黄色墙纸》放在第 4 步，是因为它能帮助读者在“短篇小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为夏洛特·珀金斯·吉尔曼，相关标签为女性主义文学、短篇小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "Rashōmon",
+        "titleTranslatedCn": "罗生门",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《罗生门》放在第 5 步，是因为它能帮助读者在“短篇小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为芥川龙之介，相关标签为短篇小说、日本现代文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "呐喊",
+        "titleTranslatedCn": "呐喊",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《呐喊》放在第 6 步，是因为它能帮助读者在“短篇小说入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为鲁迅，相关标签为中国现代文学、短篇小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 7,
+        "titleOriginal": "受戒",
+        "titleTranslatedCn": "受戒",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《受戒》放在第 7 步，是因为它能帮助读者在“短篇小说入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为汪曾祺，相关标签为中国当代文学、短篇小说。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "非虚构写作入门",
+    "description": "这条路径面向想理解事实、叙事、现场和作者立场如何结合的读者。它按照由易到难的顺序安排候选作品，先建立入口经验，再进入核心文本，最后扩展到更复杂或更具挑战性的作品。全路径共 3 部作品。",
+    "targetReader": "想理解事实、叙事、现场和作者立场如何结合的读者",
+    "difficultyStart": 2,
+    "difficultyEnd": 4,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "In Cold Blood",
+        "titleTranslatedCn": "冷血",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《冷血》放在第 1 步，是因为它能帮助读者在“非虚构写作入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为杜鲁门·卡波特，相关标签为新新闻主义、非虚构写作、犯罪小说。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "The Rings of Saturn",
+        "titleTranslatedCn": "土星之环",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《土星之环》放在第 2 步，是因为它能帮助读者在“非虚构写作入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为温弗里德·塞巴尔德，相关标签为非虚构写作、后现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "我的精神家园",
+        "titleTranslatedCn": "我的精神家园",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《我的精神家园》放在第 3 步，是因为它能帮助读者在“非虚构写作入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为王小波，相关标签为非虚构写作、中国当代文学。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  },
+  {
+    "title": "哲学感小说入门",
+    "description": "这条路径面向想通过小说而非理论书进入哲学问题的读者。它按照由易到难的顺序安排候选作品，先建立入口经验，再进入核心文本，最后扩展到更复杂或更具挑战性的作品。全路径共 6 部作品。",
+    "targetReader": "想通过小说而非理论书进入哲学问题的读者",
+    "difficultyStart": 2,
+    "difficultyEnd": 5,
+    "steps": [
+      {
+        "stepOrder": 1,
+        "titleOriginal": "The Stranger",
+        "titleTranslatedCn": "局外人",
+        "roleInPath": "ENTRY",
+        "reason": "作为入口步骤，《局外人》放在第 1 步，是因为它能帮助读者在“哲学感小说入门”中完成这一阶段的阅读任务。它相对适合作为入口：主题抓手清楚，读者不必先掌握完整文学史背景，也能从作品处境、人物经验或叙事方式中感受到这一路径的核心问题。作者为阿尔贝·加缪，相关标签为存在主义文学、荒诞派、现代主义。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 2,
+        "titleOriginal": "Siddhartha",
+        "titleTranslatedCn": "悉达多",
+        "roleInPath": "FOUNDATION",
+        "reason": "作为基础步骤，《悉达多》放在第 2 步，是因为它能帮助读者在“哲学感小说入门”中完成这一阶段的阅读任务。它在入口作品之后提供更稳定的基础经验：一方面延续前一步已经建立的阅读方向，另一方面开始增加结构、主题或历史背景的复杂度。作者为赫尔曼·黑塞，相关标签为现代主义、哲学入门。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 3,
+        "titleOriginal": "Steppenwolf",
+        "titleTranslatedCn": "荒原狼",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《荒原狼》放在第 3 步，是因为它能帮助读者在“哲学感小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为赫尔曼·黑塞，相关标签为现代主义、存在主义文学。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 4,
+        "titleOriginal": "Solaris",
+        "titleTranslatedCn": "索拉里斯星",
+        "roleInPath": "CORE",
+        "reason": "作为核心步骤，《索拉里斯星》放在第 4 步，是因为它能帮助读者在“哲学感小说入门”中完成这一阶段的阅读任务。它是这一路径中的核心文本之一，能够集中呈现该主题的关键写法和问题意识。放在这里，是为了让读者在已有入口经验后再接触更具代表性的作品，而不是一开始就被经典难度劝退。作者为斯坦尼斯瓦夫·莱姆，相关标签为科幻文学、哲学入门。",
+        "skipAllowed": false,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 5,
+        "titleOriginal": "The Little Prince",
+        "titleTranslatedCn": "小王子",
+        "roleInPath": "ADVANCED",
+        "reason": "作为进阶步骤，《小王子》放在第 5 步，是因为它能帮助读者在“哲学感小说入门”中完成这一阶段的阅读任务。它更适合作为进阶步骤：阅读时通常需要更强的耐心，或需要读者已经熟悉前面作品中的叙事方式、主题背景和思想问题。作者为安托万·德·圣-埃克苏佩里，相关标签为儿童文学、哲学入门。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      },
+      {
+        "stepOrder": 6,
+        "titleOriginal": "The Brothers Karamazov",
+        "titleTranslatedCn": "卡拉马佐夫兄弟",
+        "roleInPath": "EXPANSION",
+        "reason": "作为扩展步骤，《卡拉马佐夫兄弟》放在第 6 步，是因为它能帮助读者在“哲学感小说入门”中完成这一阶段的阅读任务。它承担扩展作用：不是单纯作为结尾名作，而是帮助读者把前面建立的理解横向展开，看到这一主题在不同作家、地域、类型或时代中的变形。作者为费奥多尔·陀思妥耶夫斯基，相关标签为现实主义、存在主义文学、哲学入门。",
+        "skipAllowed": true,
+        "alternativeTitle": ""
+      }
+    ]
+  }
+]
