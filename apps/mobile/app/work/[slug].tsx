@@ -129,7 +129,7 @@ export default function WorkDetailScreen() {
           {work.titleOriginal ? <Text style={styles.original}>{work.titleOriginal}</Text> : null}
           <View style={styles.metaRow}>
             <Link href={`/author/${slugify(work.authorName)}` as any} asChild>
-              <Pressable><Text style={styles.metaLink}>{work.authorName}</Text></Pressable>
+              <Pressable accessibilityRole="link" accessibilityLabel={work.authorName}><Text style={styles.metaLink}>{work.authorName}</Text></Pressable>
             </Link>
             {work.firstPublishedYear ? <Text style={styles.metaText}>{work.firstPublishedYear}</Text> : null}
             <Text style={styles.metaText}>{work.countryOrRegion}</Text>
@@ -244,7 +244,7 @@ export default function WorkDetailScreen() {
         <Pressable style={{flex:1,justifyContent:"center",alignItems:"center",backgroundColor:"rgba(0,0,0,0.5)"}} onPress={() => setShowShareCard(false)}>
           <Pressable onPress={()=>{}} style={{padding:20}}>
             <ShareCard ref={cardRef}
-              type="work" title={work.titleDisplayCn} subtitle={work.titleOriginal}
+              type="work" title={work.titleDisplayCn} slug={work.slug} subtitle={work.titleOriginal}
               meta1={work.authorName} meta2={work.literaryCategory}
               meta3={"难度 " + work.difficultyLevel} meta4={linkedMovements[0]?.label}
               positioning={positioning}
@@ -268,7 +268,7 @@ function GuideToggle({ label, value }: { label: string; value: string }) {
   const [open, setOpen] = useState(false);
   return (
     <View style={[styles.guideToggleWrap, open && styles.guideToggleWrapOpen]}>
-      <Pressable onPress={() => setOpen((p) => !p)} style={styles.guideToggleRow}>
+      <Pressable onPress={() => setOpen((p) => !p)} style={styles.guideToggleRow} accessibilityRole="button" aria-expanded={open}>
         <Text style={styles.guideToggleLabel}>{label}</Text>
         <Text style={[styles.guideToggleArrow, open && { color: colors.accent }]}>{open ? "▲" : "▼"}</Text>
       </Pressable>

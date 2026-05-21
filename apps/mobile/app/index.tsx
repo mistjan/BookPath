@@ -66,7 +66,8 @@ const gateways = [
         <View style={s.gatewaySection}>
           {gateways.map((g, i) => (
             <Link key={g.title} href={g.href as any} asChild>
-              <Pressable style={i === 0 ? StyleSheet.flatten([s.gatewayCard, s.gatewayPrimary]) : s.gatewayCard}>
+              <Pressable style={i === 0 ? StyleSheet.flatten([s.gatewayCard, s.gatewayPrimary]) : s.gatewayCard}
+                accessibilityRole="link" accessibilityLabel={g.title}>
                 <Text style={s.gatewayIcon}>{g.icon}</Text>
                 <View style={s.gatewayBody}>
                   <Text style={[s.gatewayTitle, i === 0 && { color: colors.paperStrong }]}>{g.title}</Text>
@@ -84,7 +85,7 @@ const gateways = [
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={s.hScroll}>
             {randomWorks.map((work) => (
               <Link key={work.id} href={`/work/${work.slug}` as any} asChild>
-                <Pressable style={s.featCard}>
+                <Pressable style={s.featCard} accessibilityRole="link" accessibilityLabel={work.titleDisplayCn}>
                   <Text style={s.featCat}>{(work.literaryCategory as string)}</Text>
                   <Text style={s.featTitle} numberOfLines={2}>{work.titleDisplayCn}</Text>
                   <Text style={s.featAuthor}>{work.authorName}</Text>
@@ -104,7 +105,7 @@ const gateways = [
           <View style={s.section}>
             <Text style={s.sectionLabel}>推荐路径</Text>
             <Link href={`/path/${randomPath.slug || randomPath.id}` as any} asChild>
-              <Pressable accessibilityRole="link" style={s.pathCard}>
+              <Pressable accessibilityRole="link" accessibilityLabel={randomPath.title} style={s.pathCard}>
                 <View style={s.pathTop}>
                   <Text style={s.pathType}>{((randomPath.type === "BEGINNER" ? "入门" : randomPath.type || "阅读") + "路径")}</Text>
                   <Text style={s.pathSteps}>{randomPath.steps?.length || 0} 步</Text>

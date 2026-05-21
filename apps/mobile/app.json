@@ -4,17 +4,22 @@
     "slug": "bookpath",
     "scheme": "bookpath",
     "orientation": "portrait",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "experiments": {
       "typedRoutes": true
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "associatedDomains": ["applinks:bookpath.app"]
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#f7f0e5"
-      }
+      },
+      "intentFilters": [
+        { "action": "VIEW", "autoVerify": true, "data": [{ "scheme": "https", "host": "bookpath.app", "pathPrefix": "/" }], "category": ["BROWSABLE", "DEFAULT"] },
+        { "action": "VIEW", "data": [{ "scheme": "bookpath", "host": "*" }], "category": ["BROWSABLE", "DEFAULT"] }
+      ]
     },
     "web": {
       "bundler": "metro"

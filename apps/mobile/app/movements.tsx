@@ -17,8 +17,7 @@ const groupOpts = [
   { label: "奖项·入门", ids: ["nobel-literature-reading","booker-prize-reading","hugo-award-reading","akutagawa-prize-literature","naoki-prize-literature","mao-dun-literature-prize-reading","lu-xun-literature-prize-reading","fiction-introduction","short-story","drama","poetry-introduction","bildungsroman","family-saga"] },
 ];
 
-// Dark mode: dynamic colors
-  export default function MovementsScreen() {
+export default function MovementsScreen() {
   const [query, setQuery] = useState("");
   const [groupFilter, setGroupFilter] = useState("");
 
@@ -38,15 +37,15 @@ const groupOpts = [
       <View style={s.searchWrap}>
         <TextInput style={s.input} placeholder="搜索流派..." placeholderTextColor={colors.muted}
           value={query} onChangeText={setQuery} autoCapitalize="none" autoCorrect={false} />
-        {query.length > 0 && <Pressable accessibilityLabel="清除搜索" onPress={() => setQuery("")}><Text style={s.clearText}>✕</Text></Pressable>}
+        {query.length > 0 && <Pressable onPress={() => setQuery("")} accessibilityLabel="清除搜索"><Text style={s.clearText}>✕</Text></Pressable>}
       </View>
 
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={s.chipScroll}>
-        <Pressable onPress={() => setGroupFilter("")} style={[s.chip, !groupFilter && s.chipOn]}>
+        <Pressable onPress={() => setGroupFilter("")} style={[s.chip, !groupFilter && s.chipOn]} accessibilityRole="button" accessibilityLabel="全部流派">
           <Text style={[s.chipText, !groupFilter && s.chipTextOn]}>全部</Text>
         </Pressable>
         {groupOpts.map(g => (
-          <Pressable key={g.label} accessibilityRole="button" onPress={() => setGroupFilter(groupFilter === g.label ? "" : g.label)} style={[s.chip, groupFilter === g.label && s.chipOn]}>
+          <Pressable key={g.label} onPress={() => setGroupFilter(groupFilter === g.label ? "" : g.label)} style={[s.chip, groupFilter === g.label && s.chipOn]} accessibilityRole="button" accessibilityLabel={g.label}>
             <Text style={[s.chipText, groupFilter === g.label && s.chipTextOn]}>{g.label}</Text>
           </Pressable>
         ))}
@@ -57,7 +56,7 @@ const groupOpts = [
         ListHeaderComponent={<Text style={s.resultCount}>{flatList.length} 个流派</Text>}
         renderItem={({ item }) => (
           <Link href={`/movement/${item.id}`} asChild>
-            <View style={s.card}>
+            <Pressable style={s.card} accessibilityRole="link" accessibilityLabel={item.label}>
               <View style={s.catRow}>
                 <Text style={s.period}>{item.period}</Text>
                 <Text style={s.region}>{item.region}</Text>
@@ -69,7 +68,7 @@ const groupOpts = [
                 <Text style={s.count}>{workCount(item.id)} 部作品</Text>
                 <Text style={s.arrow}>→</Text>
               </View>
-            </View>
+            </Pressable>
           </Link>
         )}
       />

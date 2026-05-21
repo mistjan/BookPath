@@ -61,7 +61,7 @@ export default function MovementDetailScreen() {
 
         {firstBook ? (
           <Link href={`/work/${works.find((w) => w.id === firstBook.workId)?.slug || firstBook.workId}` as any} asChild>
-            <Pressable style={styles.startHere}>
+            <Pressable style={styles.startHere} accessibilityRole="link" accessibilityLabel={"第一本先读：" + firstBook.title}>
               <Text style={styles.eyebrow}>Start Here →</Text>
               <Text style={styles.firstBookTitle}>第一本先读：{firstBook.title}</Text>
               <Text style={styles.firstBookNote}>{firstBook.suitability}</Text>
@@ -154,7 +154,7 @@ export default function MovementDetailScreen() {
                   const workSlug = workItem?.slug ?? card.workId;
                   return (
                     <Link key={card.id} href={`/work/${workSlug}` as any} asChild>
-                      <Pressable style={({ pressed }) => [styles.workLink, pressed && styles.workLinkPressed]}>
+                      <Pressable accessibilityRole="link" accessibilityLabel={card.title} style={({ pressed }) => [styles.workLink, pressed && styles.workLinkPressed]}>
                         <Text style={styles.workLinkTitle}>{card.title}</Text>
                         <Text style={styles.workLinkMeta}>难度 {card.difficultyLevel}{(card as any).caution ? " / 建议暂缓" : ""}</Text>
                       </Pressable>
@@ -171,7 +171,7 @@ export default function MovementDetailScreen() {
         <Pressable style={{flex:1,justifyContent:"center",alignItems:"center",backgroundColor:"rgba(0,0,0,0.5)"}} onPress={() => setShowShare(false)}>
           <Pressable onPress={()=>{}} style={{padding:20}}>
             <ShareCard ref={cardRef}
-              type="movement" title={movement.label} subtitle={movement.originalName}
+              type="movement" title={movement.label} slug={movement.id} subtitle={movement.originalName}
               meta1={movement.period} meta2={movement.region}
               positioning={movement.oneLine}
               cell1Label="核心特征" cell1Value={movement.keyFeatures.slice(0,2).join("、")}

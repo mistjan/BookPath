@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Tabs } from "expo-router";
 import { useFonts } from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
@@ -5,7 +6,8 @@ import { colors, typography } from "@bookpath/design-tokens";
 import { ActivityIndicator, View, StyleSheet } from "react-native";
 import { ErrorBoundary } from "@/components/error-boundary";
 import { ThemeProvider } from "@/components/theme-provider";
-import { setStorageBackend } from "@bookpath/core";
+import { setStorageBackend, cacheData, getCachedData } from "@bookpath/core";
+import { bookPathData, contentVersion } from "@bookpath/content";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
 setStorageBackend({
@@ -37,7 +39,22 @@ export default function RootLayout() {
     "NotoSerifSC_900": require("@expo-google-fonts/noto-serif-sc/900Black/NotoSerifSC_900Black.ttf"),
   });
 
-  if (!fontsLoaded) return <LoadingScreen />;
+  // Offline cache: validate on startup, refresh if needed
+  const [cacheReady, setCacheReady] = useState(false);
+  useEffect(() => {
+    (async () => {
+      const cached = await getCachedData<unknown>(contentVersion);
+      if (!cached) {
+        await cacheData(bookPathData, contentVersion);
+        console.log("[cache] cached content v" + contentVersion);
+      } else {
+        console.log("[cache] cache valid v" + contentVersion);
+      }
+      setCacheReady(true);
+    })();
+  }, []);
+
+  if (!fontsLoaded || !cacheReady) return <LoadingScreen />;
 
   return (
     <ErrorBoundary>

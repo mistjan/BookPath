@@ -93,8 +93,12 @@ export default function PathDetailScreen() {
 
   return (
     <View style={styles.screen}>
-      <Stack.Screen options={{ headerLeft: () => <GoBack />, title: path.title }} />
-      <Pressable onPress={() => setShowShare(true)} style={{position:"absolute",top:12,right:12,zIndex:10,padding:8}}><Text style={{fontSize:18,color:colors.muted}}>↗</Text></Pressable>
+      <Stack.Screen options={{ headerShown: false }} />
+      <View style={{flexDirection:"row",alignItems:"center",paddingLeft:12,paddingRight:20,paddingVertical:10,borderBottomColor:colors.line,borderBottomWidth:StyleSheet.hairlineWidth,backgroundColor:"#f7f0e5"}}>
+        <GoBack title={path.title} />
+        <View style={{flex:1}} />
+        <Pressable onPress={() => setShowShare(true)}><Text style={{fontSize:18,color:colors.muted}}>↗</Text></Pressable>
+      </View>
       <ScrollView contentContainerStyle={styles.content}>
         <View style={styles.header}>
           <Text style={styles.eyebrow}>{pathTypeLabel[path.type] ?? path.type}</Text>
@@ -172,7 +176,7 @@ export default function PathDetailScreen() {
       <Modal visible={showShare} transparent animationType="fade" onRequestClose={() => setShowShare(false)}>
         <Pressable style={{flex:1,justifyContent:"center",alignItems:"center",backgroundColor:"rgba(0,0,0,0.5)"}} onPress={() => setShowShare(false)}>
           <Pressable onPress={()=>{}} style={{padding:20}}>
-            <ShareCard ref={cardRef} type="path" title={path.title} meta1={((path as any).steps?.length||0)+" 步"} meta2={((path as any).difficultyRange||"适中")} positioning={(path as any).description||""} steps={(path as any).steps?.slice(0,5).map((s:any) => { const w = works.find((x:any) => x.id === s.workId); return { title: s.title, author: w?.authorName, difficulty: s.difficultyLevel || w?.difficultyLevel, reason: s.reason }; }) || []} />
+            <ShareCard ref={cardRef} type="path" title={path.title} slug={path.slug||path.id} meta1={((path as any).steps?.length||0)+" 步"} meta2={((path as any).difficultyRange||"适中")} positioning={(path as any).description||""} steps={(path as any).steps?.slice(0,5).map((s:any) => { const w = works.find((x:any) => x.id === s.workId); return { title: s.title, author: w?.authorName, difficulty: s.difficultyLevel || w?.difficultyLevel, reason: s.reason }; }) || []} />
             <Pressable onPress={async () => { try { const uri = await captureRef(cardRef, { format: "png", quality: 0.9 }); await Share.share({ url: uri }); } catch {} }} style={{marginTop:12,padding:14,backgroundColor:"#7b3f2d",alignItems:"center"}}><Text style={{color:"#fffaf1",fontWeight:"800",fontSize:14}}>分享为图片</Text></Pressable>
           </Pressable>
         </Pressable>

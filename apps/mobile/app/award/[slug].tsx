@@ -33,7 +33,10 @@ export default function AwardDetailScreen() {
 
   return (
     <View style={styles.screen}>
-      <Stack.Screen options={{ headerLeft: () => <GoBack title="奖项" />, title: "奖项" }} />
+      <Stack.Screen options={{ headerShown: false }} />
+      <View style={{flexDirection:"row",alignItems:"center",paddingLeft:12,paddingRight:20,paddingVertical:10,borderBottomColor:colors.line,borderBottomWidth:StyleSheet.hairlineWidth,backgroundColor:"#f7f0e5"}}>
+        <GoBack title="奖项" />
+      </View>
       <ScrollView contentContainerStyle={styles.content}>
         <View style={styles.header}>
           <Text style={styles.eyebrow}>{award.nameOriginal}</Text>

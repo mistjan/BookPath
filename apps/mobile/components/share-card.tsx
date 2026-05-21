@@ -13,6 +13,7 @@ interface StepInfo {
 interface ShareCardProps {
   type: "work" | "movement" | "path";
   title: string;
+  slug?: string;
   subtitle?: string;
   meta1?: string;
   meta2?: string;
@@ -38,10 +39,10 @@ const diffLabel = (l?: number) => {
 };
 
 export const ShareCard = forwardRef<View, ShareCardProps>(function ShareCard(
-  { type, title, subtitle, meta1, meta2, meta3, meta4, positioning, steps, cell1Label, cell1Value, cell2Label, cell2Value, cell3Label, cell3Value, cell4Label, cell4Value },
+  { type, title, slug, subtitle, meta1, meta2, meta3, meta4, positioning, steps, cell1Label, cell1Value, cell2Label, cell2Value, cell3Label, cell3Value, cell4Label, cell4Value },
   ref
 ) {
-  const shareUrl = `https://bookpath.app/${type}/${encodeURIComponent(title)}`;
+  const shareUrl = slug ? `https://bookpath.app/${type}/${slug}` : `https://bookpath.app/${type}/${encodeURIComponent(title)}`;
   const isPath = type === "path";
   const showSteps = isPath && steps && steps.length > 0;
   const displaySteps = showSteps ? steps!.slice(0, 5) : [];
