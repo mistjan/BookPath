@@ -5,17 +5,18 @@
   "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "prebuild": "expo prebuild --platform android --clean"
   },
   "dependencies": {
     "@bookpath/content": "0.1.0",
     "@bookpath/core": "0.1.0",
     "@bookpath/design-tokens": "0.1.0",
     "@expo-google-fonts/noto-serif-sc": "^0.4.3",
-    "@react-native-async-storage/async-storage": "^3.0.3",
+    "@react-native-async-storage/async-storage": "^2.2.0",
     "expo": "^55.0.0",
     "expo-constants": "~55.0.16",
     "expo-font": "^55.0.8",

@@ -6,15 +6,20 @@ import { colors, typography } from "@bookpath/design-tokens";
 import { ActivityIndicator, View, StyleSheet } from "react-native";
 import { ErrorBoundary } from "@/components/error-boundary";
 import { ThemeProvider } from "@/components/theme-provider";
-import { setStorageBackend, cacheData, getCachedData } from "@bookpath/core";
-import { bookPathData, contentVersion } from "@bookpath/content";
+import { setStorageBackend } from "@bookpath/core";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-setStorageBackend({
-  get: async (key) => { const v = await AsyncStorage.getItem(key); return v ? JSON.parse(v) : null; },
-  set: async (key, value) => { await AsyncStorage.setItem(key, JSON.stringify(value)); },
-  remove: async (key) => { await AsyncStorage.removeItem(key); },
-});
+// Defer storage init to component mount (safe for native)
+let storageReady = false;
+function initStorage() {
+  if (storageReady) return;
+  storageReady = true;
+  setStorageBackend({
+    get: async (key) => { const v = await AsyncStorage.getItem(key); return v ? JSON.parse(v) : null; },
+    set: async (key, value) => { await AsyncStorage.setItem(key, JSON.stringify(value)); },
+    remove: async (key) => { await AsyncStorage.removeItem(key); },
+  });
+}
 
 const tabs = [
   { name: "index", title: "首页", icon: "compass-outline" as const, iconActive: "compass" as const },
@@ -39,22 +44,10 @@ export default function RootLayout() {
     "NotoSerifSC_900": require("@expo-google-fonts/noto-serif-sc/900Black/NotoSerifSC_900Black.ttf"),
   });
 
-  // Offline cache: validate on startup, refresh if needed
-  const [cacheReady, setCacheReady] = useState(false);
-  useEffect(() => {
-    (async () => {
-      const cached = await getCachedData<unknown>(contentVersion);
-      if (!cached) {
-        await cacheData(bookPathData, contentVersion);
-        console.log("[cache] cached content v" + contentVersion);
-      } else {
-        console.log("[cache] cache valid v" + contentVersion);
-      }
-      setCacheReady(true);
-    })();
-  }, []);
+  // Initialize storage on mount (not at module level)
+  useEffect(() => { initStorage(); }, []);
 
-  if (!fontsLoaded || !cacheReady) return <LoadingScreen />;
+  if (!fontsLoaded) return <LoadingScreen />;
 
   return (
     <ErrorBoundary>
