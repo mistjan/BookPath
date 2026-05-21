@@ -127,6 +127,20 @@ npm --workspace apps/mobile run check    # 移动端类型检查
 npm --workspace @bookpath/web run build  # Web 端生产构建
 ```
 
+### APK 构建 (EAS Build)
+
+```powershell
+# 首次配置
+eas init --force
+eas build:configure
+
+# 构建 APK
+eas build --platform android --profile preview --non-interactive
+
+# 查看构建列表
+eas build:list
+```
+
 ### 缓存清理
 
 ```powershell
@@ -144,3 +158,4 @@ npm --workspace @bookpath/web run build  # Web 端生产构建
 | 深色模式 | ThemeProvider + 切换按钮已完成 · StyleSheet 动态化需逐页迁移 |
 | 无用户系统 | 收藏/阅读状态仅本地存储，跨设备不同步 |
 | 无后端 CMS | 数据为静态 JSON，内容更新需修改数据文件后重建 |
+| DeepLink | `bookpath://` scheme 已配置 · `https://bookpath.app` 需部署 Web 端 + apple-app-site-association |
