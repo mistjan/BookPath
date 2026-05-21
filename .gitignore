@@ -36,6 +36,12 @@ Thumbs.db
 next-env.d.ts
 .gstack/
 
+# EAS / prebuild leftovers at root
+/App.js
+/app.json
+/android/
+/eas.json
+
 .next/
 
 node_modules/
