@@ -6,8 +6,8 @@ expo-env.d.ts
 # @end expo-cli
 
 # Custom
+android/
 .expo/
-android/app/build/
 *.jks
 *.keystore
 local.properties
