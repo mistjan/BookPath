@@ -2,7 +2,7 @@
   "expo": {
     "name": "书径",
     "slug": "bookpath",
-    "scheme": "bookpath",
+    
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "experiments": {
@@ -26,8 +26,7 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router",
-      "expo-linking"
+      "expo-router"
     ]
   }
 }
