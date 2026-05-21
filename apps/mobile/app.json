@@ -3,6 +3,7 @@
     "name": "书径",
     "slug": "bookpath",
     "scheme": "bookpath",
+    "version": "0.2.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "experiments": {
@@ -20,8 +21,13 @@
     "web": {
       "bundler": "metro"
     },
+    "splash": {
+      "backgroundColor": "#f7f0e5",
+      "resizeMode": "contain"
+    },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-splash-screen"
     ]
   }
 }

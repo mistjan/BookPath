@@ -5,6 +5,12 @@
     "scheme": "bookpath",
     "android": {
       "package": "com.anonymous.bookpath"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "64b72fc8-eafd-43ac-8015-a4029439c7d8"
+      }
+    },
+    "owner": "mistjan"
   }
 }
