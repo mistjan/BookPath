@@ -1,5 +1,7 @@
 {
   "expo": {
+    "name": "书径",
+    "scheme": "bookpath",
     "android": {
       "package": "com.anonymous.bookpath"
     }
