@@ -38,9 +38,9 @@ next-env.d.ts
 
 # EAS / prebuild leftovers at root
 /App.js
-/app.json
 /android/
-/eas.json
+# /eas.json
+# /app.json
 
 .next/
 
