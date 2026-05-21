@@ -1,44 +1,6 @@
 # BookPath 流派生成提示词
 
-文件建议位置：`scripts/prompts/movement.ts`  
-对应 BookPath 文档第 8.3 节：流派生成 Prompt。
 
----
-
-## 1. 使用目标
-
-本提示词用于让 AI 根据 `movementName` 生成一个文学流派、文学类型或阅读门类的结构化草稿。
-
-所有生成结果默认视为 AI 草稿：
-
-```json
-{
-  "aiGenerated": true,
-  "reviewStatus": "AI_DRAFT"
-}
-```
-
-不得默认标记为 `VERIFIED`。
-
----
-
-## 2. 输入变量
-
-必须使用以下变量名，不要改名：
-
-```text
-movementName
-```
-
-调用示例：
-
-```json
-{
-  "movementName": "现代主义"
-}
-```
-
----
 
 ## 3. 正式提示词
 
@@ -55,9 +17,6 @@ movementName
 5. 必须给出新手入门建议。
 6. 不要直接照搬任何网站文字。
 7. 不确定的地方标记为“待确认”。
-8. 输出 JSON。
-9. 不要生成 Markdown。
-10. 不要在 JSON 外添加解释文字。
 11. 如果流派边界存在争议，应在 definitionPrecise、historicalContext 或 beginnerWarning 中说明，不要强行绝对化。
 12. recommendedWorks 中的作品名必须优先使用原名 titleOriginal；若已有常见中文译名，则填写 titleTranslatedCn。
 13. recommendedWorks.role 只能使用 ENTRY、FOUNDATION、CORE、ADVANCED、EXPANSION。

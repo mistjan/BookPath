@@ -14,12 +14,21 @@
     "@bookpath/content": "0.1.0",
     "@bookpath/core": "0.1.0",
     "@bookpath/design-tokens": "0.1.0",
+    "@expo-google-fonts/noto-serif-sc": "^0.4.3",
+    "@react-native-async-storage/async-storage": "^3.0.3",
     "expo": "^55.0.0",
-    "expo-router": "^7.0.0",
+    "expo-constants": "~55.0.16",
+    "expo-font": "^55.0.8",
+    "expo-linking": "~55.0.15",
+    "expo-router": "~55.0.15",
     "react": "^19.0.0",
+    "react-dom": "^19.2.6",
     "react-native": "^0.82.0",
-    "react-native-safe-area-context": "^5.6.0",
-    "react-native-screens": "^4.18.0"
+    "react-native-qrcode-svg": "^6.3.21",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-view-shot": "^5.1.0",
+    "react-native-web": "^0.21.2"
   },
   "devDependencies": {
     "typescript": "^5.7.2"

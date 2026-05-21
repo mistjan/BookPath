@@ -15,9 +15,21 @@ export const spacing = {
   gap: 12
 } as const;
 
+export const darkColors = {
+  ink: "#f0e8d8",
+  paper: "#1a1612",
+  paperStrong: "#231f18",
+  line: "#3a3228",
+  accent: "#c97a5a",
+  green: "#7a9a6a",
+  muted: "#a0907a",
+} as const;
+
 export const typography = {
-  serif: "Noto Serif SC",
+  serif: "NotoSerifSC",
+  serifBold: "NotoSerifSC_700",
+  serifBlack: "NotoSerifSC_900",
   sans: "system-ui",
   titleLineHeight: 1.08,
-  bodyLineHeight: 1.78
+  bodyLineHeight: 1.78,
 } as const;

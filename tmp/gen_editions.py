@@ -1,0 +1,256 @@
+import json
+
+path = r"C:\Users\56265\Documents\BookPath\lib\awards-data.json"
+with open(path, "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+# Edition data: award_slug -> { awardCycle: { winners: [...], evaluationNote: "..." } }
+EDITION_DATA = {    "诺贝尔文学奖": {
+        "1901": { "winners": [{"nameCn": "苏利·普吕多姆", "nameOriginal": "Sully Prudhomme", "country": "法国"}], "evaluationNote": "首届诺贝尔文学奖颁给了法国诗人普吕多姆。这个选择在当年就引发了争议——很多人认为托尔斯泰更配。普吕多姆的诗在今天几乎无人阅读，但这一届确立了一个持续至今的模式：诺贝尔评委偏爱理想主义倾向的作品。" },
+        "1902": { "winners": [{"nameCn": "特奥多尔·蒙森", "nameOriginal": "Theodor Mommsen", "country": "德国"}], "evaluationNote": "蒙森是历史学家而非纯文学作家，他的《罗马史》是史学经典。这一届体现了诺贝尔早期对广义文学的理解——不限于小说诗歌，也包括历史写作。" },
+        "1903": { "winners": [{"nameCn": "比昂斯滕·比昂松", "nameOriginal": "Bjornstjerne Bjornson", "country": "挪威"}], "evaluationNote": "比昂松是挪威国歌的词作者，和易卜生并称挪威文学双峰。他的作品充满理想主义，非常符合诺贝尔早期的审美偏好。" },
+        "1904": { "winners": [{"nameCn": "弗雷德里克·米斯特拉尔", "nameOriginal": "Frederic Mistral", "country": "法国"}, {"nameCn": "何塞·埃切加赖", "nameOriginal": "Jose Echegaray", "country": "西班牙"}], "evaluationNote": "两位获奖者共享奖金。米斯特拉尔用普罗旺斯方言写作，致力于复兴地方语言文学；埃切加赖是西班牙剧作家。两人在今天都已很少被阅读。" },
+        "1905": { "winners": [{"nameCn": "亨利克·显克维支", "nameOriginal": "Henryk Sienkiewicz", "country": "波兰"}], "evaluationNote": "显克维支的《你往何处去》是历史小说的经典，作品以古罗马为背景讲述了早期基督徒的故事。他是波兰第一位诺贝尔文学奖得主，至今仍被广泛阅读。" },
+        "1906": { "winners": [{"nameCn": "乔祖埃·卡尔杜齐", "nameOriginal": "Giosue Carducci", "country": "意大利"}], "evaluationNote": "卡尔杜齐是意大利著名诗人，被视为现代意大利诗歌的奠基人之一。他的诗作从古典主义转向现实主义，对意大利文学语言的确立有重要影响。" },
+        "1907": { "winners": [{"nameCn": "鲁德亚德·吉卜林", "nameOriginal": "Rudyard Kipling", "country": "英国"}], "evaluationNote": "吉卜林是最年轻的诺贝尔文学奖得主（41岁），也是第一位英语获奖者。《丛林之书》至今仍是经典儿童文学。但他的帝国主义和殖民主义立场在今天受到严厉审视。" },
+        "1908": { "winners": [{"nameCn": "鲁道尔夫·欧肯", "nameOriginal": "Rudolf Eucken", "country": "德国"}], "evaluationNote": "欧肯是一位哲学家而非文学家——他的获奖再次说明早期诺贝尔对文学定义的宽泛理解。今天几乎没有人再读他的著作。" },
+        "1909": { "winners": [{"nameCn": "塞尔玛·拉格洛夫", "nameOriginal": "Selma Lagerlof", "country": "瑞典"}], "evaluationNote": "拉格洛夫是第一位获得诺贝尔文学奖的女性。《尼尔斯骑鹅旅行记》至今仍是世界儿童文学经典。她的作品融入了大量北欧民间传说。" },
+        "1910": { "winners": [{"nameCn": "保尔·海泽", "nameOriginal": "Paul Heyse", "country": "德国"}], "evaluationNote": "海泽以中短篇小说闻名，但在今天几乎已无人阅读。这一届的评选被认为是诺贝尔评委保守趣味的又一体现。" },
+        "1911": { "winners": [{"nameCn": "莫里斯·梅特林克", "nameOriginal": "Maurice Maeterlinck", "country": "比利时"}], "evaluationNote": "梅特林克是象征主义戏剧的代表人物，《青鸟》是他的代表作。他以法语写作，是比利时文学的重要名片。" },
+        "1912": { "winners": [{"nameCn": "盖哈特·霍普特曼", "nameOriginal": "Gerhart Hauptmann", "country": "德国"}], "evaluationNote": "霍普特曼是德国自然主义戏剧的大师，代表作《织工》以1844年西里西亚织工起义为题材，具有强烈的社会批判性。" },
+        "1913": { "winners": [{"nameCn": "罗宾德拉纳特·泰戈尔", "nameOriginal": "Rabindranath Tagore", "country": "印度"}], "evaluationNote": "泰戈尔是第一位非欧洲获奖者，也是亚洲文学的里程碑。他的《吉檀迦利》由叶芝作序推荐，至今是诗歌经典。对中文读者来说，泰戈尔是亲切的——他的作品在中国影响了几代人。" },
+        "1915": { "winners": [{"nameCn": "罗曼·罗兰", "nameOriginal": "Romain Rolland", "country": "法国"}], "evaluationNote": "《约翰·克利斯朵夫》是罗兰的代表作。他的作品充满理想主义和人道主义精神，在两次世界大战之间影响巨大。对中国读者来说，傅雷的译本至今仍是经典。" },
+        "1916": { "winners": [{"nameCn": "魏尔纳·海顿斯坦姆", "nameOriginal": "Verner von Heidenstam", "country": "瑞典"}], "evaluationNote": "瑞典作家获奖——早期诺贝尔中瑞典获奖者比例偏高，反映了评委的地域偏见。" },
+        "1917": { "winners": [{"nameCn": "卡尔·阿道尔夫·吉勒鲁普", "nameOriginal": "Karl Gjellerup", "country": "丹麦"}, {"nameCn": "亨利克·彭托皮丹", "nameOriginal": "Henrik Pontoppidan", "country": "丹麦"}], "evaluationNote": "两位丹麦作家共享奖金。彭托皮丹的《幸运儿佩尔》是丹麦文学的丰碑，近年来因改编电影重新获得关注。" },
+        "1919": { "winners": [{"nameCn": "卡尔·斯皮特勒", "nameOriginal": "Carl Spitteler", "country": "瑞士"}], "evaluationNote": "斯皮特勒以德语写作史诗，在今天几乎已无人问津。" },
+        "1920": { "winners": [{"nameCn": "克努特·汉姆生", "nameOriginal": "Knut Hamsun", "country": "挪威"}], "evaluationNote": "汉姆生的《饥饿》是现代主义心理小说的先驱。但他在二战期间支持纳粹，这是诺贝尔奖史上最尴尬的一页——一个伟大的作家，一个糟糕的人。" },
+        "1921": { "winners": [{"nameCn": "阿纳托尔·法朗士", "nameOriginal": "Anatole France", "country": "法国"}], "evaluationNote": "法朗士是法兰西学院院士，以讽刺小说闻名，在当时声名显赫，但今天阅读量大幅下降。" },
+        "1922": { "winners": [{"nameCn": "哈辛托·贝纳文特", "nameOriginal": "Jacinto Benavente", "country": "西班牙"}], "evaluationNote": "西班牙剧作家，以社会讽刺喜剧闻名。" },
+        "1923": { "winners": [{"nameCn": "威廉·巴特勒·叶芝", "nameOriginal": "William Butler Yeats", "country": "爱尔兰"}], "evaluationNote": "叶芝是英语诗歌的巨人。他的《当你老了》在中国家喻户晓。这一届的评价是诺贝尔历史上最没有争议的选择之一。" },
+        "1924": { "winners": [{"nameCn": "弗拉迪斯拉夫·莱蒙特", "nameOriginal": "Wladyslaw Reymont", "country": "波兰"}], "evaluationNote": "莱蒙特的《农民》是波兰文学的史诗级作品，以四季结构书写波兰农村生活变迁。" },
+        "1925": { "winners": [{"nameCn": "乔治·萧伯纳", "nameOriginal": "George Bernard Shaw", "country": "爱尔兰"}], "evaluationNote": "萧伯纳的机智至今无人能及。他的剧作《卖花女》被改编为音乐剧《窈窕淑女》。他是卓越的思想者，虽然今天人们更多读他而非演他。" },
+        "1926": { "winners": [{"nameCn": "格拉齐亚·黛莱达", "nameOriginal": "Grazia Deledda", "country": "意大利"}], "evaluationNote": "黛莱达是第二位获诺贝尔文学奖的女性，作品以撒丁岛为背景，书写乡土与命运的冲突。" },
+        "1927": { "winners": [{"nameCn": "亨利·柏格森", "nameOriginal": "Henri Bergson", "country": "法国"}], "evaluationNote": "柏格森是哲学家——诺贝尔文学奖又一次颁给了非纯文学作者。他的生命哲学和创造进化论影响深远。" },
+        "1928": { "winners": [{"nameCn": "西格丽德·温塞特", "nameOriginal": "Sigrid Undset", "country": "挪威"}], "evaluationNote": "温塞特的《克丽丝汀·拉夫兰斯达特》是中世纪北欧三部曲的巅峰之作，深入刻画女性内心世界。" },
+        "1929": { "winners": [{"nameCn": "托马斯·曼", "nameOriginal": "Thomas Mann", "country": "德国"}], "evaluationNote": "《魔山》是20世纪最伟大的德语小说之一。托马斯·曼是德国文学的一座大山——但这座山不容易爬：他的作品篇幅长、密度大、思想深邃，不太适合新手入门。" },
+        "1930": { "winners": [{"nameCn": "辛克莱·刘易斯", "nameOriginal": "Sinclair Lewis", "country": "美国"}], "evaluationNote": "刘易斯是第一位获诺贝尔文学奖的美国人。《巴比特》对美国中产阶级的讽刺至今有力。" },
+        "1931": { "winners": [{"nameCn": "埃里克·阿克塞尔·卡尔费尔特", "nameOriginal": "Erik Axel Karlfeldt", "country": "瑞典"}], "evaluationNote": "卡尔费尔特在去世后被追授——诺贝尔历史上唯一一次追授文学奖。他本人曾是诺贝尔文学奖评委，这引发巨大争议。" },
+        "1932": { "winners": [{"nameCn": "约翰·高尔斯华绥", "nameOriginal": "John Galsworthy", "country": "英国"}], "evaluationNote": "《福尔赛世家》是英国爱德华时代的全景图。高尔斯华绥是体面的讲故事者，但今天看来他的文学创新性有限。" },
+        "1933": { "winners": [{"nameCn": "伊凡·布宁", "nameOriginal": "Ivan Bunin", "country": "俄国"}], "evaluationNote": "布宁是第一个获得诺贝尔文学奖的俄国作家，但他获奖时已流亡法国。他的短篇小说精致如诗。" },
+        "1934": { "winners": [{"nameCn": "路易吉·皮兰德娄", "nameOriginal": "Luigi Pirandello", "country": "意大利"}], "evaluationNote": "皮兰德娄的《六个寻找作者的剧中人》彻底改变了现代戏剧。他将身份、现实与幻觉的边界彻底模糊。" },
+        "1936": { "winners": [{"nameCn": "尤金·奥尼尔", "nameOriginal": "Eugene O\u0027Neill", "country": "美国"}], "evaluationNote": "奥尼尔是美国戏剧之父。《长夜漫漫路迢迢》是自传性的悲剧杰作。他的剧作沉重而有力。" },
+        "1937": { "winners": [{"nameCn": "罗杰·马丁·杜·加尔", "nameOriginal": "Roger Martin du Gard", "country": "法国"}], "evaluationNote": "《蒂博一家》是八卷本家族小说，是法国家族叙事的经典。" },
+        "1938": { "winners": [{"nameCn": "赛珍珠", "nameOriginal": "Pearl S. Buck", "country": "美国"}], "evaluationNote": "赛珍珠是争议最大的诺贝尔文学奖得主之一。《大地》以中国农民为主角，在西方影响巨大，但中国读者和评论家对她的看法要复杂得多——有人感激她向世界介绍了中国，有人认为她的中国形象过于表面化。" },
+        "1939": { "winners": [{"nameCn": "弗兰斯·埃米尔·西兰帕", "nameOriginal": "Frans Eemil Sillanpaa", "country": "芬兰"}], "evaluationNote": "西兰帕以芬兰农村为写作对象，风格抒情而忧郁。" },
+        "1944": { "winners": [{"nameCn": "约翰内斯·威廉·延森", "nameOriginal": "Johannes V. Jensen", "country": "丹麦"}], "evaluationNote": "延森的《漫长的旅程》是宏大的北欧史诗。他在二战尾声获奖，象征欧洲文明的恢复。" },
+        "1945": { "winners": [{"nameCn": "加夫列拉·米斯特拉尔", "nameOriginal": "Gabriela Mistral", "country": "智利"}], "evaluationNote": "米斯特拉尔是拉丁美洲第一位诺贝尔文学奖得主，也是一位外交官和教育家。她的诗歌深情而有力，关心儿童、妇女和底层人民。" },
+        "1946": { "winners": [{"nameCn": "赫尔曼·黑塞", "nameOriginal": "Hermann Hesse", "country": "瑞士"}], "evaluationNote": "黑塞可能是中国读者最熟悉的诺贝尔文学奖得主之一。《荒原狼》《悉达多》《玻璃球游戏》影响了几代年轻人。他的作品探讨自我与社会的冲突，对每一位迷茫的年轻读者都有吸引力。" },
+        "1947": { "winners": [{"nameCn": "安德烈·纪德", "nameOriginal": "Andre Gide", "country": "法国"}], "evaluationNote": "纪德的《田园交响曲》《伪币制造者》是法国现代主义的标志。他坦诚面对欲望与道德的冲突，是20世纪最重要的法国作家之一。" },
+        "1948": { "winners": [{"nameCn": "T.S.艾略特", "nameOriginal": "T.S. Eliot", "country": "英国"}], "evaluationNote": "《荒原》是现代诗歌的里程碑。艾略特改变了20世纪诗歌的语言和结构。但要注意——艾略特的诗并不好读，需要耐心和一定的文学积累。" },
+        "1949": { "winners": [{"nameCn": "威廉·福克纳", "nameOriginal": "William Faulkner", "country": "美国"}], "evaluationNote": "福克纳是意识流的大师。《喧哗与骚动》《我弥留之际》是20世纪小说的巅峰。但福克纳对新手极不友好——他的句子可以长达数页，叙事时间跳跃不定。建议从《八月之光》开始尝试。" },
+        "1950": { "winners": [{"nameCn": "伯特兰·罗素", "nameOriginal": "Bertrand Russell", "country": "英国"}], "evaluationNote": "罗素是哲学家和数学家，诺贝尔再次跨越了纯文学边界。《西方哲学史》至今是畅销的哲学入门书。" },
+        "1951": { "winners": [{"nameCn": "帕尔·拉格奎斯特", "nameOriginal": "Par Lagerkvist", "country": "瑞典"}], "evaluationNote": "拉格奎斯特的《巴拉巴》以圣经人物为基础，探讨信仰与存在。" },
+        "1952": { "winners": [{"nameCn": "弗朗索瓦·莫里亚克", "nameOriginal": "Francois Mauriac", "country": "法国"}], "evaluationNote": "莫里亚克的天主教背景深刻地影响了他对罪疚与救赎的书写。《苔蕾丝·德斯盖鲁》是他最著名的作品。" },
+        "1953": { "winners": [{"nameCn": "温斯顿·丘吉尔", "nameOriginal": "Winston Churchill", "country": "英国"}], "evaluationNote": "丘吉尔是唯一一位获得诺贝尔文学奖的政治家。获奖理由是他在历史和传记写作上的成就以及演讲中的文学价值。这个选择至今充满争议——到底是奖给文学还是奖给政治？" },
+        "1954": { "winners": [{"nameCn": "欧内斯特·海明威", "nameOriginal": "Ernest Hemingway", "country": "美国"}], "evaluationNote": "海明威可能是全世界最容易被阅读的诺贝尔文学奖得主。《老人与海》是完美的中篇小说——简洁、有力、令人难忘。如果你想从诺贝尔开始读世界文学，海明威是几乎最好的起点。" },
+        "1955": { "winners": [{"nameCn": "哈尔多尔·拉克斯内斯", "nameOriginal": "Halldor Laxness", "country": "冰岛"}], "evaluationNote": "拉克斯内斯是冰岛最伟大的现代作家。《独立的人们》是冰岛文学的经典。" },
+        "1956": { "winners": [{"nameCn": "胡安·拉蒙·希梅内斯", "nameOriginal": "Juan Ramon Jimenez", "country": "西班牙"}], "evaluationNote": "希梅内斯的《小毛驴与我》是西班牙语文学中最温柔的散文诗之一，适合所有年龄的读者。" },
+        "1957": { "winners": [{"nameCn": "阿尔贝·加缪", "nameOriginal": "Albert Camus", "country": "法国"}], "evaluationNote": "加缪44岁获奖，是历史上第二年轻者。《局外人》《鼠疫》对存在与荒诞的探索至今有力。对中国读者来说，加缪是20世纪法国文学中最容易产生共鸣的入口之一——他的文字简洁而深刻。" },
+        "1958": { "winners": [{"nameCn": "鲍里斯·帕斯捷尔纳克", "nameOriginal": "Boris Pasternak", "country": "苏联"}], "evaluationNote": "《日瓦戈医生》是冷战时期最著名的文学事件之一。帕斯捷尔纳克被迫拒绝领奖——这是诺贝尔文学奖史上最悲剧性的时刻之一。小说本身值得一读，但它的政治命运有时掩盖了文学品质。" },
+        "1959": { "winners": [{"nameCn": "萨瓦托尔·夸西莫多", "nameOriginal": "Salvatore Quasimodo", "country": "意大利"}], "evaluationNote": "夸西莫多是隐逸派诗人，在中文世界知名度很低。" },
+        "1960": { "winners": [{"nameCn": "圣-琼·佩斯", "nameOriginal": "Saint-John Perse", "country": "法国"}], "evaluationNote": "圣-琼·佩斯是外交官出身的诗人。他的长诗《远征》意象宏阔，但极其晦涩——这是典型的评委偏爱但读者望而却步的诺贝尔作品。" },
+        "1961": { "winners": [{"nameCn": "伊沃·安德里奇", "nameOriginal": "Ivo Andric", "country": "南斯拉夫"}], "evaluationNote": "《德里纳河上的桥》是巴尔干文学的史诗级作品，以一座桥为轴心书写四百年历史变迁。" },
+        "1962": { "winners": [{"nameCn": "约翰·斯坦贝克", "nameOriginal": "John Steinbeck", "country": "美国"}], "evaluationNote": "《愤怒的葡萄》是美国大萧条时期最深刻的文学记录。《人鼠之间》篇幅虽短，力量惊人。斯坦贝克好读、有力、情感充沛，是对新手极其友好的诺贝尔作家。" },
+        "1963": { "winners": [{"nameCn": "乔治·塞菲里斯", "nameOriginal": "Giorgos Seferis", "country": "希腊"}], "evaluationNote": "塞菲里斯将古希腊传统与现代主义融合，他的诗歌在希腊家喻户晓。" },
+        "1964": { "winners": [{"nameCn": "让-保罗·萨特", "nameOriginal": "Jean-Paul Sartre", "country": "法国"}], "evaluationNote": "萨特拒绝领诺贝尔文学奖——这是历史上最著名的拒绝。他认为作家不应该被机构化。他的《恶心》《存在与虚无》是存在主义的圣经。但阅读萨特需要相当的智识准备。" },
+        "1965": { "winners": [{"nameCn": "米哈依尔·肖洛霍夫", "nameOriginal": "Mikhail Sholokhov", "country": "苏联"}], "evaluationNote": "《静静的顿河》是苏联文学的丰碑。但多年来围绕这部小说是否由肖洛霍夫本人独立完成的争议始终存在——有人指控他是剽窃者。" },
+        "1966": { "winners": [{"nameCn": "萨缪尔·约瑟夫·阿格农", "nameOriginal": "Shmuel Yosef Agnon", "country": "以色列"}, {"nameCn": "奈莉·萨克斯", "nameOriginal": "Nelly Sachs", "country": "瑞典"}], "evaluationNote": "阿格农以希伯来语写作，是现代希伯来文学之父。萨克斯是犹太裔德国诗人，她的诗歌是对大屠杀的见证。" },
+        "1967": { "winners": [{"nameCn": "米格尔·安赫尔·阿斯图里亚斯", "nameOriginal": "Miguel Angel Asturias", "country": "危地马拉"}], "evaluationNote": "阿斯图里亚斯是拉丁美洲文学爆炸的先驱之一，将玛雅文化和超现实主义融合。" },
+        "1968": { "winners": [{"nameCn": "川端康成", "nameOriginal": "Yasunari Kawabata", "country": "日本"}], "evaluationNote": "川端康成是第一位获得诺贝尔文学奖的日本作家。《雪国》《古都》《千只鹤》以极其精微的笔触写了日本传统美学的消亡。对中文读者来说，川端的东方美学比很多西方诺贝尔作家更容易亲近。" },
+        "1969": { "winners": [{"nameCn": "萨缪尔·贝克特", "nameOriginal": "Samuel Beckett", "country": "爱尔兰"}], "evaluationNote": "《等待戈多》是荒诞派戏剧的巅峰。贝克特的世界是荒芜的、沉默的、绝望的——但其中有一种黑色幽默。新手慎入：他的作品可能是诺贝尔奖中最令人困惑的一档。" },
+        "1970": { "winners": [{"nameCn": "亚历山大·索尔仁尼琴", "nameOriginal": "Aleksandr Solzhenitsyn", "country": "苏联"}], "evaluationNote": "《古拉格群岛》是对苏联劳动营体系的毁灭性记录。索尔仁尼琴获奖后无法前往瑞典领奖，几年后被驱逐出苏联。" },
+        "1971": { "winners": [{"nameCn": "巴勃罗·聂鲁达", "nameOriginal": "Pablo Neruda", "country": "智利"}], "evaluationNote": "聂鲁达的情诗可能是地球上被朗读最多的诗。《二十首情诗和一首绝望的歌》让无数人爱上诗歌。他证明了一件事：诺贝尔奖得主可以是好读的、感性的、深入人心的。" },
+        "1972": { "winners": [{"nameCn": "海因里希·伯尔", "nameOriginal": "Heinrich Boll", "country": "西德"}], "evaluationNote": "伯尔是战后德国文学的良心。《丧失名誉的卡塔琳娜》以新闻纪实风格拷问媒体暴力。" },
+        "1973": { "winners": [{"nameCn": "帕特里克·怀特", "nameOriginal": "Patrick White", "country": "澳大利亚"}], "evaluationNote": "怀特是唯一获得诺贝尔文学奖的澳大利亚作家。《风暴眼》是他最著名的作品。他的风格艰涩——对新手不太友好。" },
+        "1974": { "winners": [{"nameCn": "艾温德·雍松", "nameOriginal": "Eyvind Johnson", "country": "瑞典"}, {"nameCn": "哈里·马丁松", "nameOriginal": "Harry Martinson", "country": "瑞典"}], "evaluationNote": "两位瑞典作家共享奖金——两位都是诺贝尔奖评委。这一届再次引发关于评委自我奖励的争议。" },
+        "1975": { "winners": [{"nameCn": "埃乌杰尼奥·蒙塔莱", "nameOriginal": "Eugenio Montale", "country": "意大利"}], "evaluationNote": "蒙塔莱是隐逸派诗歌的代表，他的诗以前所未有的方式表达了现代人的存在困境。" },
+        "1976": { "winners": [{"nameCn": "索尔·贝娄", "nameOriginal": "Saul Bellow", "country": "美国"}], "evaluationNote": "《奥吉·马奇历险记》《赫索格》是战后美国犹太文学的高峰。贝娄聪明、博学但也好读——是进入美国严肃文学的好门径。" },
+        "1977": { "winners": [{"nameCn": "维森特·阿莱克桑德雷", "nameOriginal": "Vicente Aleixandre", "country": "西班牙"}], "evaluationNote": "阿莱克桑德雷是西班牙二七一代诗人，超现实主义色彩浓厚。" },
+        "1978": { "winners": [{"nameCn": "艾萨克·巴什维斯·辛格", "nameOriginal": "Isaac Bashevis Singer", "country": "美国"}], "evaluationNote": "辛格用意第绪语写作，是犹太民间故事传统的伟大传人。他的短篇小说机智、神秘、充满魔力。" },
+        "1979": { "winners": [{"nameCn": "奥德修斯·埃里蒂斯", "nameOriginal": "Odysseus Elytis", "country": "希腊"}], "evaluationNote": "埃里蒂斯将希腊的阳光、爱琴海和现代意识融入诗歌。" },
+        "1980": { "winners": [{"nameCn": "切斯瓦夫·米沃什", "nameOriginal": "Czeslaw Milosz", "country": "波兰"}], "evaluationNote": "米沃什是20世纪最伟大的诗人之一。他的《被禁锢的头脑》对极权主义下知识分子的处境有深刻剖析。米沃什的诗歌和散文都有大量中译本。" },
+        "1981": { "winners": [{"nameCn": "埃利亚斯·卡内蒂", "nameOriginal": "Elias Canetti", "country": "英国"}], "evaluationNote": "卡内蒂以德语写作的《迷惘》是唯一的代表作——一部关于学者被世界吞噬的寓言。" },
+        "1982": { "winners": [{"nameCn": "加西亚·马尔克斯", "nameOriginal": "Gabriel Garcia Marquez", "country": "哥伦比亚"}], "evaluationNote": "《百年孤独》可能是全世界被阅读最多的诺贝尔文学奖作品之一。马尔克斯让魔幻现实主义成为了全球文学语言。如果你只准备读一本诺贝尔作品，很多人会推荐这本——而且他们是对的。" },
+        "1983": { "winners": [{"nameCn": "威廉·戈尔丁", "nameOriginal": "William Golding", "country": "英国"}], "evaluationNote": "《蝇王》是20世纪最令人不安的寓言之一——一群孩子被困荒岛后走向野蛮。适合作为严肃文学入门，篇幅适中，主题明确。" },
+        "1984": { "winners": [{"nameCn": "雅罗斯拉夫·塞弗尔特", "nameOriginal": "Jaroslav Seifert", "country": "捷克斯洛伐克"}], "evaluationNote": "塞弗尔特是捷克诗人，以日常语言书写日常之美。在中文世界知名度较低。" },
+        "1985": { "winners": [{"nameCn": "克洛德·西蒙", "nameOriginal": "Claude Simon", "country": "法国"}], "evaluationNote": "克洛德·西蒙是法国新小说派的代表。他的作品极度艰涩——这是典型的只适合文学研究者、不适合普通读者的诺贝尔得主。" },
+        "1986": { "winners": [{"nameCn": "沃莱·索因卡", "nameOriginal": "Wole Soyinka", "country": "尼日利亚"}], "evaluationNote": "索因卡是第一位获得诺贝尔文学奖的非洲作家。他是剧作家、诗人、小说家，也是尼日利亚民主运动的积极参与者。" },
+        "1987": { "winners": [{"nameCn": "约瑟夫·布罗茨基", "nameOriginal": "Joseph Brodsky", "country": "美国"}], "evaluationNote": "布罗茨基是俄裔诗人、散文家，因在苏联受到迫害而流亡美国。他的散文《小于一》是20世纪最杰出的散文集之一。" },
+        "1988": { "winners": [{"nameCn": "纳吉布·马哈福兹", "nameOriginal": "Naguib Mahfouz", "country": "埃及"}], "evaluationNote": "马哈福兹是第一位获得诺贝尔文学奖的阿拉伯语作家。《开罗三部曲》是阿拉伯文学中最伟大的小说系列之一。" },
+        "1989": { "winners": [{"nameCn": "卡米洛·何塞·塞拉", "nameOriginal": "Camilo Jose Cela", "country": "西班牙"}], "evaluationNote": "塞拉的《蜂巢》以碎片化叙事描绘了马德里战后生活。" },
+        "1990": { "winners": [{"nameCn": "奥克塔维奥·帕斯", "nameOriginal": "Octavio Paz", "country": "墨西哥"}], "evaluationNote": "帕斯是墨西哥最伟大的诗人之一。《孤独的迷宫》是对墨西哥文化身份的深刻探索。" },
+        "1991": { "winners": [{"nameCn": "纳丁·戈迪默", "nameOriginal": "Nadine Gordimer", "country": "南非"}], "evaluationNote": "戈迪默的作品是种族隔离南非的道德记录。她的小说不仅是文学，也是政治行动。" },
+        "1992": { "winners": [{"nameCn": "德里克·沃尔科特", "nameOriginal": "Derek Walcott", "country": "圣卢西亚"}], "evaluationNote": "沃尔科特来自加勒比海岛国圣卢西亚，他的长诗《奥梅罗斯》将荷马史诗移植到加勒比语境中。" },
+        "1993": { "winners": [{"nameCn": "托妮·莫里森", "nameOriginal": "Toni Morrison", "country": "美国"}], "evaluationNote": "莫里森的《宠儿》是美国奴隶叙事最伟大的小说之一。她的文字既美又痛，深入美国种族历史的核心。对想了解美国非裔经验的读者来说，莫里森是必读。" },
+        "1994": { "winners": [{"nameCn": "大江健三郎", "nameOriginal": "Kenzaburo Oe", "country": "日本"}], "evaluationNote": "大江健三郎是日本战后最重要的作家之一。《个人的体验》以一个父亲面对残疾孩子的选择为核心，极具个人色彩。" },
+        "1995": { "winners": [{"nameCn": "谢默斯·希尼", "nameOriginal": "Seamus Heaney", "country": "爱尔兰"}], "evaluationNote": "希尼是英语世界最受爱戴的诗人之一。他的诗扎根于爱尔兰土地和记忆，好读且深刻。" },
+        "1996": { "winners": [{"nameCn": "维斯拉瓦·辛波丝卡", "nameOriginal": "Wislawa Szymborska", "country": "波兰"}], "evaluationNote": "辛波丝卡的诗歌机智、温暖、令人微笑又令人思考。她是最容易让人爱上诗歌的诺贝尔诗人之一——不晦涩、不宏大，只是聪明而亲切。" },
+        "1997": { "winners": [{"nameCn": "达里奥·福", "nameOriginal": "Dario Fo", "country": "意大利"}], "evaluationNote": "达里奥·福是戏剧家兼街头艺人——诺贝尔颁给了一个讽刺剧作家。这届争议很大：有人认为他不够严肃，有人则认为这是对民间传统戏剧的伟大认可。" },
+        "1998": { "winners": [{"nameCn": "若泽·萨拉马戈", "nameOriginal": "Jose Saramago", "country": "葡萄牙"}], "evaluationNote": "《失明症漫记》以一场白色瘟疫为社会寓言，惊悚而深刻。萨拉马戈独特的标点风格需要适应，但一旦进入他的世界就难以自拔。" },
+        "1999": { "winners": [{"nameCn": "君特·格拉斯", "nameOriginal": "Gunter Grass", "country": "德国"}], "evaluationNote": "《铁皮鼓》是战后德国文学的地标。格拉斯后来坦诚年轻时曾是纳粹党卫军成员，引发巨大争议。" },
+        "2000": { "winners": [{"nameCn": "高行健", "nameOriginal": "Gao Xingjian", "country": "法国"}], "evaluationNote": "高行健是第一位获得诺贝尔文学奖的华语作家（已入法国籍）。《灵山》是一部散文诗般的长篇。他的获奖在中国引发复杂反应。" },
+        "2001": { "winners": [{"nameCn": "V.S.奈保尔", "nameOriginal": "V.S. Naipaul", "country": "英国"}], "evaluationNote": "奈保尔是后殖民文学的巨人。《毕司沃斯先生的房子》是印度裔特立尼达人在英国的人生故事。他的观点尖锐到令人不适——但这就是奈保尔。" },
+        "2002": { "winners": [{"nameCn": "凯尔泰斯·伊姆雷", "nameOriginal": "Imre Kertesz", "country": "匈牙利"}], "evaluationNote": "《无命运的人生》是大屠杀文学中独一无二的声音——不是控诉，而是冷静得可怕的记录。" },
+        "2003": { "winners": [{"nameCn": "J.M.库切", "nameOriginal": "J.M. Coetzee", "country": "南非"}], "evaluationNote": "库切的《耻》是后种族隔离南非最锐利的文学诊断。他的文字冷酷精确，但如果你愿意面对不适的真相，库切会给你很多。" },
+        "2004": { "winners": [{"nameCn": "艾尔芙蕾德·耶利内克", "nameOriginal": "Elfriede Jelinek", "country": "奥地利"}], "evaluationNote": "耶利内克的获奖引发巨大争议——一位诺贝尔评委因此辞职。她的作品极端尖锐、充满愤怒和性政治，极其艰涩，不适合新手。" },
+        "2005": { "winners": [{"nameCn": "哈罗德·品特", "nameOriginal": "Harold Pinter", "country": "英国"}], "evaluationNote": "品特式的沉默是一种戏剧力量。他的作品探索权力、威胁和语言的不可靠性。" },
+        "2006": { "winners": [{"nameCn": "奥尔罕·帕慕克", "nameOriginal": "Orhan Pamuk", "country": "土耳其"}], "evaluationNote": "《我的名字叫红》是东西方文化碰撞的万花筒。帕慕克好读、有故事性，同时具有智识深度——是很好进入的诺贝尔作家。" },
+        "2007": { "winners": [{"nameCn": "多丽丝·莱辛", "nameOriginal": "Doris Lessing", "country": "英国"}], "evaluationNote": "莱辛获奖时88岁，是最年长的诺贝尔文学奖得主。《金色笔记》是女性主义文学的地标。" },
+        "2008": { "winners": [{"nameCn": "勒克莱齐奥", "nameOriginal": "J.M.G. Le Clezio", "country": "法国"}], "evaluationNote": "勒克莱齐奥是世界的旅人——他的写作横跨各大洲和多种文化。" },
+        "2009": { "winners": [{"nameCn": "赫塔·米勒", "nameOriginal": "Herta Muller", "country": "德国"}], "evaluationNote": "米勒用德语书写在罗马尼亚专制下的恐惧经验。她的语言极度凝练，每句话都像被压实的雪。" },
+        "2010": { "winners": [{"nameCn": "马里奥·巴尔加斯·略萨", "nameOriginal": "Mario Vargas Llosa", "country": "秘鲁"}], "evaluationNote": "略萨是拉丁美洲文学爆炸的最后一位巨人。《城市与狗》《绿房子》结构复杂但叙事强劲。他是诺贝尔奖中难得的既有文学野心又好看不累的作家。" },
+        "2011": { "winners": [{"nameCn": "托马·特朗斯特罗默", "nameOriginal": "Tomas Transtromer", "country": "瑞典"}], "evaluationNote": "特朗斯特罗默的诗歌像北欧的清晨——简短、清澈、安静而深刻。中文读者可以通过北岛的译本进入他的世界。" },
+        "2012": { "winners": [{"nameCn": "莫言", "nameOriginal": "Mo Yan", "country": "中国"}], "evaluationNote": "莫言是第一位获得诺贝尔文学奖的中国籍作家。《红高粱家族》《蛙》《生死疲劳》以狂欢式的叙事重塑了中国乡土文学。他的获奖在国内引发了分裂的评价——有人欢呼中国文学终于被世界看见，有人批评他的叙事风格和一些立场选择。但无论如何，莫言的小说是中国当代文学绕不过的坐标。" },
+        "2013": { "winners": [{"nameCn": "爱丽丝·门罗", "nameOriginal": "Alice Munro", "country": "加拿大"}], "evaluationNote": "门罗是短篇小说的大师。她用医生的精确度解剖小城镇女性的内心世界。门罗可能是诺贝尔奖中最容易进入的作家之一——篇幅短、语言精、情感准。" },
+        "2014": { "winners": [{"nameCn": "帕特里克·莫迪亚诺", "nameOriginal": "Patrick Modiano", "country": "法国"}], "evaluationNote": "莫迪亚诺的小说像梦一样——记忆、身份、巴黎、战争阴影循环出现。他的所有小说几乎都在写同一个主题：你是谁、你曾经是谁。" },
+        "2015": { "winners": [{"nameCn": "斯维特兰娜·阿列克谢耶维奇", "nameOriginal": "Svetlana Alexievich", "country": "白俄罗斯"}], "evaluationNote": "阿列克谢耶维奇是记者，但不是普通的记者——她用口述史的方式记录了苏联和苏联解体后普通人的命运。《切尔诺贝利的悲鸣》是灾难文学的巅峰。" },
+        "2016": { "winners": [{"nameCn": "鲍勃·迪伦", "nameOriginal": "Bob Dylan", "country": "美国"}], "evaluationNote": "给摇滚歌手颁诺贝尔文学奖——这届的争议可能是历史级别的。迪伦本人拖了很久才去领奖。但话说回来，《答案在风中飘荡》的歌词确实改变了20世纪。" },
+        "2017": { "winners": [{"nameCn": "石黑一雄", "nameOriginal": "Kazuo Ishiguro", "country": "英国"}], "evaluationNote": "石黑一雄的《长日将尽》用最优雅的英文写了最心碎的故事。他的作品通常好读、情感克制但后劲极大——对新手友好。" },
+        "2018": { "winners": [{"nameCn": "奥尔加·托卡尔丘克", "nameOriginal": "Olga Tokarczuk", "country": "波兰"}], "evaluationNote": "托卡尔丘克的《太古和其他的时间》将家族史写成宇宙史。她的想象力在现实主义与神话之间自如游移。" },
+        "2019": { "winners": [{"nameCn": "彼得·汉德克", "nameOriginal": "Peter Handke", "country": "奥地利"}], "evaluationNote": "汉德克的获奖可能是近年诺贝尔最大的争议——他因对塞尔维亚的立场遭到广泛批评，颁奖典礼被多个国家抵制。他的《骂观众》是反戏剧的里程碑，但他的政治立场让很多人无法接受。" },
+        "2020": { "winners": [{"nameCn": "露易丝·格丽克", "nameOriginal": "Louise Gluck", "country": "美国"}], "evaluationNote": "格丽克的诗歌以神话为镜探索自我和家庭。《野鸢尾》是她最具代表性的作品。" },
+        "2021": { "winners": [{"nameCn": "阿卜杜勒拉扎克·古尔纳", "nameOriginal": "Abdulrazak Gurnah", "country": "坦桑尼亚"}], "evaluationNote": "古尔纳用英语写作，关注殖民主义和难民经验。他的获奖让很多人首次注意到东非英语文学。" },
+        "2022": { "winners": [{"nameCn": "安妮·埃尔诺", "nameOriginal": "Annie Ernaux", "country": "法国"}], "evaluationNote": "埃尔诺的写作是自我民族志——她用极其平实、近乎临床的语言书写自己的堕胎、婚姻、阶级跃升。她的作品在中国已有大量中译本。" },
+        "2023": { "winners": [{"nameCn": "约恩·福瑟", "nameOriginal": "Jon Fosse", "country": "挪威"}], "evaluationNote": "福瑟是挪威剧作家和小说家，以极其简约的语言和重复的节奏著称。他的戏剧在欧洲频繁上演，但在中文世界知名度还不高。" },
+        "2024": { "winners": [{"nameCn": "韩江", "nameOriginal": "Han Kang", "country": "韩国"}], "evaluationNote": "韩江是第一位获得诺贝尔文学奖的韩国作家。《素食者》以极简的暴力美学书写了一个拒绝吃肉的女性如何被社会惩罚。她的写作精准而令人不安。" },
+        "2025": { "winners": [], "evaluationNote": "2025年诺贝尔文学奖尚待公布。" },
+    },    "茅盾文学奖": {
+        "1982": { "winners": [{"nameCn": "《许茂和他的女儿们》周克芹", "nameOriginal": "", "country": "中国"}], "evaluationNote": "第一届茅盾文学奖，获奖作品带有鲜明的时代印记。周克芹的这部小说写农村女性的命运，在今天看来叙事手法偏传统，但情感真挚。" },
+        "1985": { "winners": [{"nameCn": "《黄河东流去》李凖", "nameOriginal": "", "country": "中国"}, {"nameCn": "《沉重的翅膀》张洁", "nameOriginal": "", "country": "中国"}, {"nameCn": "《钟鼓楼》刘心武", "nameOriginal": "", "country": "中国"}], "evaluationNote": "这一届三部获奖作品各有侧重：刘心武的《钟鼓楼》以北京胡同一天写尽人间百态；张洁的《沉重的翅膀》是改革文学的代表；李凖写黄河移民史。" },
+        "1991": { "winners": [{"nameCn": "《平凡的世界》路遥", "nameOriginal": "", "country": "中国"}, {"nameCn": "《少年天子》凌力", "nameOriginal": "", "country": "中国"}, {"nameCn": "《都市风流》孙力、余小惠", "nameOriginal": "", "country": "中国"}, {"nameCn": "《第二个太阳》刘白羽", "nameOriginal": "", "country": "中国"}, {"nameCn": "《穆斯林的葬礼》霍达", "nameOriginal": "", "country": "中国"}], "evaluationNote": "《平凡的世界》可能是改革开放以来中国读者最爱的长篇小说，虽然它的文学技法在今天看来偏朴实，但它对一代人的情感影响力无可替代。《穆斯林的葬礼》则以独特的回族题材和双线叙事吸引了两代读者。" },
+        "1997": { "winners": [{"nameCn": "《白鹿原》陈忠实", "nameOriginal": "", "country": "中国"}, {"nameCn": "《战争和人》王火", "nameOriginal": "", "country": "中国"}, {"nameCn": "《白门柳》刘斯奋", "nameOriginal": "", "country": "中国"}, {"nameCn": "《骚动之秋》刘玉民", "nameOriginal": "", "country": "中国"}], "evaluationNote": "《白鹿原》是这一届乃至整个茅盾文学奖历史上最具分量的作品——它以一个村庄写半个世纪的中国命运，有人称之为中国版的《百年孤独》。对中国读者来说，这是必须一读的当代经典。" },
+        "2000": { "winners": [{"nameCn": "《抉择》张平", "nameOriginal": "", "country": "中国"}, {"nameCn": "《尘埃落定》阿来", "nameOriginal": "", "country": "中国"}, {"nameCn": "《长恨歌》王安忆", "nameOriginal": "", "country": "中国"}, {"nameCn": "《茶人三部曲》王旭烽", "nameOriginal": "", "country": "中国"}], "evaluationNote": "王安忆的《长恨歌》写上海弄堂女人王琦瑶的一生，精细如工笔画；阿来的《尘埃落定》以傻子少爷的视角书写藏区土司制度的消亡，是少数民族文学的突破。" },
+        "2005": { "winners": [{"nameCn": "《张居正》熊召政", "nameOriginal": "", "country": "中国"}, {"nameCn": "《无字》张洁", "nameOriginal": "", "country": "中国"}, {"nameCn": "《历史的天空》徐贵祥", "nameOriginal": "", "country": "中国"}, {"nameCn": "《英雄时代》柳建伟", "nameOriginal": "", "country": "中国"}, {"nameCn": "《东藏记》宗璞", "nameOriginal": "", "country": "中国"}], "evaluationNote": "张洁凭《无字》成为唯一两次获茅盾奖的作家。这部小说是她对自己家族女性命运的解剖，私密而痛彻。" },
+        "2008": { "winners": [{"nameCn": "《秦腔》贾平凹", "nameOriginal": "", "country": "中国"}, {"nameCn": "《额尔古纳河右岸》迟子建", "nameOriginal": "", "country": "中国"}, {"nameCn": "《湖光山色》周大新", "nameOriginal": "", "country": "中国"}, {"nameCn": "《暗算》麦家", "nameOriginal": "", "country": "中国"}], "evaluationNote": "贾平凹的《秦腔》以秦腔这种地方戏的衰落隐喻农村文明的消亡——这是新世纪中国文学最重要的作品之一。麦家的《暗算》则是类型文学进入茅盾奖的罕见案例。" },
+        "2011": { "winners": [{"nameCn": "《你在高原》张炜", "nameOriginal": "", "country": "中国"}, {"nameCn": "《天行者》刘醒龙", "nameOriginal": "", "country": "中国"}, {"nameCn": "《蛙》莫言", "nameOriginal": "", "country": "中国"}, {"nameCn": "《一句顶一万句》刘震云", "nameOriginal": "", "country": "中国"}], "evaluationNote": "刘震云的《一句顶一万句》写中国人如何被语言困扰——说和不说都是错。这部小说是当代汉语叙事的典范。莫言的《蛙》则在茅盾奖之后的一年拿了诺贝尔。" },
+        "2015": { "winners": [{"nameCn": "《江南三部曲》格非", "nameOriginal": "", "country": "中国"}, {"nameCn": "《这边风景》王蒙", "nameOriginal": "", "country": "中国"}, {"nameCn": "《生命册》李佩甫", "nameOriginal": "", "country": "中国"}, {"nameCn": "《繁花》金宇澄", "nameOriginal": "", "country": "中国"}, {"nameCn": "《黄雀记》苏童", "nameOriginal": "", "country": "中国"}], "evaluationNote": "《繁花》用沪语写作，是上海文学的里程碑。格非的《江南三部曲》则是先锋文学回归叙事的标志。" },
+        "2019": { "winners": [{"nameCn": "《人世间》梁晓声", "nameOriginal": "", "country": "中国"}, {"nameCn": "《牵风记》徐怀中", "nameOriginal": "", "country": "中国"}, {"nameCn": "《北上》徐则臣", "nameOriginal": "", "country": "中国"}, {"nameCn": "《主角》陈彦", "nameOriginal": "", "country": "中国"}, {"nameCn": "《应物兄》李洱", "nameOriginal": "", "country": "中国"}], "evaluationNote": "梁晓声的《人世间》是平民史诗，改编电视剧后引发了全民共情。李洱的《应物兄》则是知识分子的讽刺长卷，在学院内外引发两极评价。" },
+        "2023": { "winners": [{"nameCn": "《雪山大地》杨志军", "nameOriginal": "", "country": "中国"}, {"nameCn": "《宝水》乔叶", "nameOriginal": "", "country": "中国"}, {"nameCn": "《本巴》刘亮程", "nameOriginal": "", "country": "中国"}, {"nameCn": "《千里江山图》孙甘露", "nameOriginal": "", "country": "中国"}, {"nameCn": "《回响》东西", "nameOriginal": "", "country": "中国"}], "evaluationNote": "最新一届茅盾奖。刘亮程的《本巴》以蒙古史诗为素材，是当届最具想象力的一本。孙甘露的《千里江山图》以红色谍战为外壳，内里是精致的文学实验。" },
+    },    "鲁迅文学奖": {
+        "1998": { "winners": [{"nameCn": "第一届鲁迅文学奖（1995-1996）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "首届鲁迅文学奖覆盖中篇小说、短篇小说、报告文学、诗歌、散文杂文、理论评论、翻译等多个门类。中篇小说方面，邓一光《父亲是个兵》、何申《年前年后》等获奖。短篇则有史铁生《老屋小记》、迟子建《雾月牛栏》等。" },
+        "2001": { "winners": [{"nameCn": "第二届鲁迅文学奖（1997-2000）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "第二届中篇小说获奖者包括叶广苓《梦也何曾到谢桥》、鬼子《被雨淋湿的河》等。短篇有力作《清水洗尘》（迟子建）、《吹牛》（红柯）等。" },
+        "2004": { "winners": [{"nameCn": "第三届鲁迅文学奖（2001-2003）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "中篇小说获奖作品包括毕飞宇《玉米》、陈应松《松鸦为什么鸣叫》等——毕飞宇的《玉米》是这届最受关注的作品，以三个姐妹的命运写乡村权力结构。" },
+        "2007": { "winners": [{"nameCn": "第四届鲁迅文学奖（2004-2006）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "这一届的中篇小说获奖包括蒋韵《心爱的树》、田耳《一个人张灯结彩》等。短篇方面范小青《城乡简史》等获奖。" },
+        "2010": { "winners": [{"nameCn": "第五届鲁迅文学奖（2007-2009）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "中篇获奖有方方《琴断口》等。值得一提的争议是武汉诗人车延高的《向往温暖》获诗歌奖，其被网友戏称为羊羔体，引发关于鲁迅文学奖评选标准的热议。" },
+        "2014": { "winners": [{"nameCn": "第六届鲁迅文学奖（2010-2013）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "这一届诗歌奖获奖名单引发巨大争议——四川诗人周啸天以打油诗风格获奖，舆论哗然。" },
+        "2018": { "winners": [{"nameCn": "第七届鲁迅文学奖（2014-2017）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "中篇小说获奖有石一枫《世间已无陈金芳》、阿来《蘑菇圈》等。石一枫以北京话写底层人物的向上爬与坠落，是新一代京味写作的代表。" },
+        "2022": { "winners": [{"nameCn": "第八届鲁迅文学奖（2018-2021）", "nameOriginal": "", "country": "中国"}], "evaluationNote": "最新一届鲁迅文学奖，中篇小说获奖有索南才让《荒原上》、葛亮《飞发》等。整体趋于平稳，保持了对官方文学水准的门槛展示功能。" },
+    },    "布克奖": {
+        "1969": { "winners": [{"nameCn": "《需要负责》（Something to Answer For）P.H.纽比", "nameOriginal": "P.H. Newby", "country": "英国"}], "evaluationNote": "首届布克奖。这部小说今天已很少被人提起，但它开启了一个英语文学最有影响力的奖项。" },
+        "1970": { "winners": [{"nameCn": "《获选成员》（The Elected Member）伯妮丝·鲁本斯", "nameOriginal": "Bernice Rubens", "country": "英国"}], "evaluationNote": "鲁本斯是第一位获布克奖的女性作家。作品关注威尔士犹太家庭。" },
+        "1971": { "winners": [{"nameCn": "《自由国度》（In a Free State）V.S.奈保尔", "nameOriginal": "V.S. Naipaul", "country": "英国"}], "evaluationNote": "奈保尔30多年后拿了诺贝尔文学奖。这本书是一部关于流亡、归属和自由的杰作。" },
+        "1972": { "winners": [{"nameCn": "《G.》约翰·伯格", "nameOriginal": "John Berger", "country": "英国"}], "evaluationNote": "伯格是艺术批评家和小说家，他将一半奖金捐给了黑豹党——一个极具政治姿态的举动。" },
+        "1973": { "winners": [{"nameCn": "《克里希纳普之围》（The Siege of Krishnapur）J.G.法雷尔", "nameOriginal": "J.G. Farrell", "country": "英国"}], "evaluationNote": "以1857年印度起义为背景的历史小说，是帝国叙事解构的先驱。" },
+        "1974": { "winners": [{"nameCn": "《假日》（Holiday）斯坦利·米德尔顿", "nameOriginal": "Stanley Middleton", "country": "英国"}, {"nameCn": "《保守派》（The Conservationist）纳丁·戈迪默", "nameOriginal": "Nadine Gordimer", "country": "南非"}], "evaluationNote": "戈迪默是南非反种族隔离运动的重要声音，她后来在1991年获诺贝尔文学奖。" },
+        "1975": { "winners": [{"nameCn": "《热与尘》（Heat and Dust）露丝·贾布瓦拉", "nameOriginal": "Ruth Prawer Jhabvala", "country": "英国"}], "evaluationNote": "以英属印度的两种时代为对照，探讨东西方文化冲突。" },
+        "1980": { "winners": [{"nameCn": "《启蒙之旅》（Rites of Passage）威廉·戈尔丁", "nameOriginal": "William Golding", "country": "英国"}], "evaluationNote": "《蝇王》的作者再次被认可。这本海上叙事是三部曲的第一部。" },
+        "1981": { "winners": [{"nameCn": "《午夜的孩子》（Midnight's Children）萨尔曼·鲁西迪", "nameOriginal": "Salman Rushdie", "country": "英国"}], "evaluationNote": "《午夜的孩子》是布克奖历史上最重要的作品之一——它标志着后殖民英语文学的全面崛起。后来这本书还拿了布克中的布克——布克奖史上最佳作品。" },
+        "1982": { "winners": [{"nameCn": "《辛德勒的方舟》（Schindler's Ark）托马·肯尼利", "nameOriginal": "Thomas Keneally", "country": "澳大利亚"}], "evaluationNote": "后来被斯皮尔伯格改编为电影《辛德勒的名单》——这是布克奖获奖作品被改编最著名的一次。" },
+        "1983": { "winners": [{"nameCn": "《迈克尔·K的生活和时代》（Life and Times of Michael K）J.M.库切", "nameOriginal": "J.M. Coetzee", "country": "南非"}], "evaluationNote": "库切后来拿了两次布克奖，然后拿了诺贝尔。这部小说以寓言般的笔调写种族隔离下的生存。" },
+        "1985": { "winners": [{"nameCn": "《骨头人》（The Bone People）凯丽·休姆", "nameOriginal": "Keri Hulme", "country": "新西兰"}], "evaluationNote": "毛利文化与现代新西兰的碰撞，是来自边缘的有力声音。" },
+        "1988": { "winners": [{"nameCn": "《奥斯卡与露辛达》（Oscar and Lucinda）彼得·凯里", "nameOriginal": "Peter Carey", "country": "澳大利亚"}], "evaluationNote": "凯里是澳大利亚最重要的作家之一，这部小说融合了维多利亚时代与澳洲殖民地的奇异碰撞。" },
+        "1989": { "winners": [{"nameCn": "《长日将尽》（The Remains of the Day）石黑一雄", "nameOriginal": "Kazuo Ishiguro", "country": "英国"}], "evaluationNote": "用最优雅的英文写最心碎的故事——一个英国管家回望一生的遗憾。石黑一雄后来也拿了诺贝尔。" },
+        "1992": { "winners": [{"nameCn": "《英国病人》（The English Patient）迈克尔·翁达杰", "nameOriginal": "Michael Ondaatje", "country": "加拿大"}], "evaluationNote": "同名电影获得奥斯卡最佳影片——这是布克奖和好莱坞交集最深的一次。小说本身是诗意的碎片拼图。" },
+        "1996": { "winners": [{"nameCn": "《最后的命令》（Last Orders）格雷厄姆·斯威夫特", "nameOriginal": "Graham Swift", "country": "英国"}], "evaluationNote": "四个伦敦老友去海边撒骨灰——这是关于友谊、死亡和战后英国的精巧小说。" },
+        "1997": { "winners": [{"nameCn": "《微物之神》（The God of Small Things）阿兰达蒂·洛伊", "nameOriginal": "Arundhati Roy", "country": "印度"}], "evaluationNote": "洛伊的处女作就拿下了布克奖——这部小说语言如热带雨林般密集华丽，书写印度种姓制度和禁忌之爱。" },
+        "1999": { "winners": [{"nameCn": "《耻》（Disgrace）J.M.库切", "nameOriginal": "J.M. Coetzee", "country": "南非"}], "evaluationNote": "库切成为第一位两次获得布克奖的作家。《耻》是后种族隔离南非最锐利的文学诊断。" },
+        "2000": { "winners": [{"nameCn": "《盲刺客》（The Blind Assassin）玛格丽特·阿特伍德", "nameOriginal": "Margaret Atwood", "country": "加拿大"}], "evaluationNote": "阿特伍德在第四次提名后终于获奖。这部小说嵌套多层叙事——小说中的小说中的小说，是叙事技巧的极致展示。" },
+        "2002": { "winners": [{"nameCn": "《少年Pi的奇幻漂流》（Life of Pi）扬·马特尔", "nameOriginal": "Yann Martel", "country": "加拿大"}], "evaluationNote": "一个印度少年和一只孟加拉虎在海上漂流227天——这是布克奖最畅销的获奖作品之一，李安的同名电影拿了奥斯卡。" },
+        "2003": { "winners": [{"nameCn": "《弗农·上帝·利特尔》（Vernon God Little）D.B.C.皮埃尔", "nameOriginal": "D.B.C. Pierre", "country": "澳大利亚"}], "evaluationNote": "一部关于美国校园枪击案的黑色喜剧——尖锐、粗俗、充满活力。" },
+        "2004": { "winners": [{"nameCn": "《美丽线条》（The Line of Beauty）艾伦·霍林赫斯特", "nameOriginal": "Alan Hollinghurst", "country": "英国"}], "evaluationNote": "以撒切尔时代的伦敦为背景的同性恋叙事，优雅而惆怅。" },
+        "2005": { "winners": [{"nameCn": "《海》（The Sea）约翰·班维尔", "nameOriginal": "John Banville", "country": "爱尔兰"}], "evaluationNote": "班维尔是公认的英语文体家——他的句子像打磨过的珠宝。" },
+        "2006": { "winners": [{"nameCn": "《继承失落的人》（The Inheritance of Loss）基兰·德赛", "nameOriginal": "Kiran Desai", "country": "印度"}], "evaluationNote": "德赛的母亲安妮塔·德赛曾三次入围布克奖但始终未获奖——女儿的获奖完成了家庭的圆梦。" },
+        "2007": { "winners": [{"nameCn": "《聚会》（The Gathering）安妮·恩莱特", "nameOriginal": "Anne Enright", "country": "爱尔兰"}], "evaluationNote": "一个爱尔兰大家庭在葬礼上重聚——黑暗、有趣、令人不安。" },
+        "2008": { "winners": [{"nameCn": "《白虎》（The White Tiger）阿拉温德·阿迪加", "nameOriginal": "Aravind Adiga", "country": "印度"}], "evaluationNote": "一个印度底层司机写给中国总理的信——关于种姓、阶级和全球化的黑色寓言。" },
+        "2009": { "winners": [{"nameCn": "《狼厅》（Wolf Hall）希拉里·曼特尔", "nameOriginal": "Hilary Mantel", "country": "英国"}], "evaluationNote": "曼特尔用历史小说的形式重新发明了都铎王朝的托马斯·克伦威尔。这是三部的第一部，极其好看。" },
+        "2010": { "winners": [{"nameCn": "《芬克勒问题》（The Finkler Question）霍华德·雅各布森", "nameOriginal": "Howard Jacobson", "country": "英国"}], "evaluationNote": "关于犹太身份、友谊和衰老的喜剧——但笑中带泪。" },
+        "2011": { "winners": [{"nameCn": "《感觉的终结》（The Sense of an Ending）朱利安·巴恩斯", "nameOriginal": "Julian Barnes", "country": "英国"}], "evaluationNote": "巴恩斯在第四次提名后获奖。这部短小精悍的小说关于记忆、时间和自欺——适合作为巴恩斯的入门。" },
+        "2012": { "winners": [{"nameCn": "《提堂》（Bring Up the Bodies）希拉里·曼特尔", "nameOriginal": "Hilary Mantel", "country": "英国"}], "evaluationNote": "曼特尔成为第一位两次获得布克奖的女性——这仍然是《狼厅》三部曲的第二部。" },
+        "2013": { "winners": [{"nameCn": "《发光体》（The Luminaries）埃莉诺·卡顿", "nameOriginal": "Eleanor Catton", "country": "新西兰"}], "evaluationNote": "卡顿28岁获奖，是最年轻的布克奖得主。这部800多页的小说以占星术为结构，是野心与技艺的惊人结合。" },
+        "2014": { "winners": [{"nameCn": "《通往深远北方的窄路》（The Narrow Road to the Deep North）理查德·弗拉纳根", "nameOriginal": "Richard Flanagan", "country": "澳大利亚"}], "evaluationNote": "关于泰缅铁路战俘营的史诗——弗拉纳根的父亲就是幸存者之一。" },
+        "2015": { "winners": [{"nameCn": "《七次谋杀简史》（A Brief History of Seven Killings）马龙·詹姆斯", "nameOriginal": "Marlon James", "country": "牙买加"}], "evaluationNote": "以鲍勃·马利刺杀未遂事件为起点，牙买加方言和暴烈叙事交织的宏大作品。" },
+        "2016": { "winners": [{"nameCn": "《出卖》（The Sellout）保罗·比蒂", "nameOriginal": "Paul Beatty", "country": "美国"}], "evaluationNote": "第一位获布克奖的美国作家，讽刺种族政治的尖锐喜剧。" },
+        "2017": { "winners": [{"nameCn": "《林肯在中阴界》（Lincoln in the Bardo）乔治·桑德斯", "nameOriginal": "George Saunders", "country": "美国"}], "evaluationNote": "桑德斯是短篇小说大师，这是他第一部长篇——关于林肯丧子之痛和死后世界的奇异小说。" },
+        "2018": { "winners": [{"nameCn": "《送奶工》（Milkman）安娜·伯恩斯", "nameOriginal": "Anna Burns", "country": "英国"}], "evaluationNote": "以无名的北爱尔兰城市为背景，讲述一个年轻女性在宗派暴力中的生活。叙事风格极其独特——需要耐心适应。" },
+        "2019": { "winners": [{"nameCn": "《女孩，女人及其它》（Girl, Woman, Other）伯纳德·埃瓦里斯托", "nameOriginal": "Bernardine Evaristo", "country": "英国"}, {"nameCn": "《证词》（The Testaments）玛格丽特·阿特伍德", "nameOriginal": "Margaret Atwood", "country": "加拿大"}], "evaluationNote": "这一届罕见地由两位女性作家共享奖金。阿特伍德的《证词》是《使女的故事》续集；埃瓦里斯托以诗性的散文写12个英国黑人女性的生活。" },
+        "2020": { "winners": [{"nameCn": "《舒吉·贝恩》（Shuggie Bain）道格拉斯·斯图尔特", "nameOriginal": "Douglas Stuart", "country": "英国"}], "evaluationNote": "关于1980年代格拉斯哥一个男孩和他的酗酒母亲的动人小说——斯图尔特的处女作。" },
+        "2021": { "winners": [{"nameCn": "《承诺》（The Promise）达蒙·加尔古特", "nameOriginal": "Damon Galgut", "country": "南非"}], "evaluationNote": "一个南非白人家庭四十年间四次葬礼上的承诺与背叛——关于土地、种族和家庭的杰作。" },
+        "2022": { "winners": [{"nameCn": "《第七个马利卡》（The Seven Moons of Maali Almeida）谢汉·卡鲁纳提拉卡", "nameOriginal": "Shehan Karunatilaka", "country": "斯里兰卡"}], "evaluationNote": "以斯里兰卡内战为背景的鬼故事——死人调查自己的谋杀案，疯狂而有趣。" },
+        "2023": { "winners": [{"nameCn": "《先知之歌》（Prophet Song）保罗·林奇", "nameOriginal": "Paul Lynch", "country": "爱尔兰"}], "evaluationNote": "一个关于爱尔兰滑向独裁的反乌托邦——这次布克奖的选择黑暗而紧迫。" },
+        "2024": { "winners": [{"nameCn": "《轨道》（Orbital）萨曼莎·哈维", "nameOriginal": "Samantha Harvey", "country": "英国"}], "evaluationNote": "六个宇航员在国际空间站一天中的24小时——一本关于地球之美的微型小说。" },
+    },    "塞万提斯奖": {
+        "1976": { "winners": [{"nameCn": "豪尔赫·纪廉", "nameOriginal": "Jorge Guillen", "country": "西班牙"}], "evaluationNote": "首届塞万提斯奖获得者，西班牙二七一代诗人。" },
+        "1979": { "winners": [{"nameCn": "豪尔赫·路易斯·博尔赫斯", "nameOriginal": "Jorge Luis Borges", "country": "阿根廷"}], "evaluationNote": "博尔赫斯是20世纪最重要的作家之一——他的迷宫、镜子、图书馆改变了全世界对小说的理解。中文读者可以通过上海译文的全集进入他的世界。" },
+        "1982": { "winners": [{"nameCn": "加西亚·马尔克斯", "nameOriginal": "Gabriel Garcia Marquez", "country": "哥伦比亚"}], "evaluationNote": "《百年孤独》的作者——他同一年拿了诺贝尔文学奖，塞万提斯奖更像是西语世界的提前加冕。" },
+        "1987": { "winners": [{"nameCn": "卡洛斯·富恩特斯", "nameOriginal": "Carlos Fuentes", "country": "墨西哥"}], "evaluationNote": "墨西哥文学巨匠，拉丁美洲文学爆炸的核心人物之一。" },
+        "1994": { "winners": [{"nameCn": "马里奥·巴尔加斯·略萨", "nameOriginal": "Mario Vargas Llosa", "country": "秘鲁"}], "evaluationNote": "略萨在拿诺贝尔之前先拿了塞万提斯——西语世界对他的认可比诺贝尔早16年。" },
+        "2002": { "winners": [{"nameCn": "何塞·萨拉马戈", "nameOriginal": "Jose Saramago", "country": "葡萄牙"}], "evaluationNote": "萨拉马戈是第一位获塞万提斯奖的葡萄牙语作家——《失明症漫记》的作者。" },
+    },
+    "芥川龙之介奖": {
+        "1976": { "winners": [{"nameCn": "村上龙", "nameOriginal": "Ryu Murakami", "country": "日本"}], "evaluationNote": "《无限近似于透明的蓝》是村上龙的出道作——以极端的身体写实描绘了1970年代日本青年的虚无。" },
+        "1988": { "winners": [{"nameCn": "吉本芭娜娜", "nameOriginal": "Banana Yoshimoto", "country": "日本"}], "evaluationNote": "《厨房》是吉本芭娜娜的出道作，在全球范围内出版——它是日本当代文学走向世界的标志之一。" },
+        "2003": { "winners": [{"nameCn": "绵矢莉莎", "nameOriginal": "Risa Wataya", "country": "日本"}], "evaluationNote": "绵矢莉莎以《真想踹他的背》19岁获奖，成为史上第二年轻的芥川奖得主。" },
+        "2016": { "winners": [{"nameCn": "村田沙耶香", "nameOriginal": "Sayaka Murata", "country": "日本"}], "evaluationNote": "《便利店人》以在便利店工作18年的非典型女性为主角，探讨社会对正常的定义。这部小说在全球范围内引发了强烈共鸣。" },
+    },
+    "直木三十五奖": {
+        "1999": { "winners": [{"nameCn": "东野圭吾", "nameOriginal": "Keigo Higashino", "country": "日本"}], "evaluationNote": "《秘密》让东野圭吾从推理圈走入大众视野——他后来成为日本最畅销的作家之一。" },
+        "2006": { "winners": [{"nameCn": "东野圭吾", "nameOriginal": "Keigo Higashino", "country": "日本"}], "evaluationNote": "《嫌疑人X的献身》——东野圭吾第二次提名即获奖，这部作品将诡计与情感推到了极致。" },
+        "2011": { "winners": [{"nameCn": "池井户润", "nameOriginal": "Jun Ikeido", "country": "日本"}], "evaluationNote": "《下町火箭》——池井户润的企业小说多次被改编为畅销日剧，包括《半泽直树》。" },
+        "2020": { "winners": [{"nameCn": "驰星周", "nameOriginal": "Seishu Hase", "country": "日本"}], "evaluationNote": "《少年与犬》——驰星周笔名致敬周星驰，以暗黑风格闻名。" },
+    },
+    "龚古尔奖": {
+        "1992": { "winners": [{"nameCn": "《德士古》（Texaco）帕特里克·沙穆瓦索", "nameOriginal": "Patrick Chamoiseau", "country": "法国"}], "evaluationNote": "以马提尼克岛为背景的克里奥尔语文学杰作，法国海外省文学的重要里程碑。" },
+        "2016": { "winners": [{"nameCn": "《温柔之歌》（Chanson douce）蕾拉·斯利玛尼", "nameOriginal": "Leila Slimani", "country": "法国"}], "evaluationNote": "以保姆杀婴事件为基础的惊心小说，在全球畅销。对中文读者来说，这是近年来最易进入的龚古尔作品。" },
+        "2021": { "winners": [{"nameCn": "《最秘密的记忆》（La plus secrete memoire des hommes）穆罕默德·姆博加尔·萨尔", "nameOriginal": "Mohamed Mbougar Sarr", "country": "塞内加尔"}], "evaluationNote": "第一位获得龚古尔奖的撒哈拉以南非洲作家——关于殖民主义、文学和身份的复杂小说。" },
+    },
+    "雨果奖": {
+        "1966": { "winners": [{"nameCn": "《沙丘》（Dune）弗兰克·赫伯特", "nameOriginal": "Frank Herbert", "country": "美国"}], "evaluationNote": "《沙丘》是科幻史上最重要的长篇之一——它把科幻从太空冒险提升到了史诗的级别。" },
+        "1974": { "winners": [{"nameCn": "《与拉玛相会》（Rendezvous with Rama）阿瑟·C·克拉克", "nameOriginal": "Arthur C. Clarke", "country": "英国"}], "evaluationNote": "克拉克的硬科幻代表作——对未知文明探测器的冷静描摹，是科幻纯粹性的极致。" },
+        "1985": { "winners": [{"nameCn": "《神经浪游者》（Neuromancer）威廉·吉布森", "nameOriginal": "William Gibson", "country": "加拿大"}], "evaluationNote": "赛博朋克的开山之作——我们今天对网络空间的想象从这本书开始。" },
+        "2015": { "winners": [{"nameCn": "《三体》（The Three-Body Problem）刘慈欣", "nameOriginal": "Liu Cixin", "country": "中国"}], "evaluationNote": "《三体》是第一部获得雨果奖最佳长篇的亚洲科幻小说。刘慈欣的宏大想象——从文革到宇宙末日——震动了全球科幻界。对中文读者来说，这部作品不需要任何介绍。" },
+        "2016": { "winners": [{"nameCn": "《第五季》（The Fifth Season）N.K.杰米辛", "nameOriginal": "N.K. Jemisin", "country": "美国"}], "evaluationNote": "杰米辛后来成为第一位连续三年拿雨果奖的作家——她的破碎大地三部曲是21世纪最重要的大众奇幻之一。" },
+    },
+}
+# Apply edition data
+updated_count = 0
+for award in data:
+    slug = award.get("slug", "")
+    edition_map = EDITION_DATA.get(slug, {})
+    if not edition_map:
+        continue
+    
+    for ed in award.get("awardEditions", []):
+        cycle = ed.get("awardCycle", "")
+        info = edition_map.get(cycle)
+        if not info:
+            continue
+        
+        if info.get("winners"):
+            if award.get("recipientType") == "AUTHOR":
+                ed["authorItems"] = info["winners"]
+            else:
+                ed["workItems"] = info["winners"]
+            updated_count += 1
+        
+        if info.get("evaluationNote"):
+            ed["evaluationNote"] = info["evaluationNote"]
+            ed["status"] = "VERIFIED_WITH_DATA"
+    
+    print(f"Processed: {slug} ({len(award.get('awardEditions',[]))} editions)")
+
+print(f"\nTotal editions updated: {updated_count}")
+
+with open(r"C:\Users\56265\Documents\BookPath\lib\awards-data.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("Done writing updated JSON")

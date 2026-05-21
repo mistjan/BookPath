@@ -1,0 +1,46 @@
+﻿*** Begin Patch
+*** Update File: apps/mobile/app/author/[id].tsx
+@@
+-import { useMemo, useState } from "react";
+-import { useLocalSearchParams, Stack, Link } from "expo-router";
+-import { ScrollView, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
++import { useMemo } from "react";
++import { useLocalSearchParams, Stack, Link } from "expo-router";
++import { ScrollView, Pressable, StyleSheet, Text, View } from "react-native";
+@@
+-  const { id } = useLocalSearchParams<{ id: string }>();
+-  const [query, setQuery] = useState("");
++  const { id } = useLocalSearchParams<{ id: string }>();
+@@
+-  const filtered = query.trim()
+-    ? sorted.filter((w) => [w.titleDisplayCn, w.titleOriginal, w.literaryCategory, w.literarySubcategory].join(" ").includes(query.trim()))
+-    : sorted;
+-
+@@
+-        <View style={styles.searchBar}>
+-          <TextInput
+-            style={styles.input}
+-            placeholder="搜索作品名..."
+-            placeholderTextColor={colors.muted}
+-            value={query}
+-            onChangeText={setQuery}
+-            autoCapitalize="none"
+-            autoCorrect={false}
+-          />
+-          {query.length > 0 ? (
+-            <Pressable onPress={() => setQuery("")}>
+-              <Text style={styles.clear}>✕</Text>
+-            </Pressable>
+-          ) : null}
+-        </View>
+-
+@@
+-          <Text style={styles.sectionTitle}>作品列表 ({filtered.length})</Text>
+-          {filtered.map((work) => (
++          <Text style={styles.sectionTitle}>作品列表 ({sorted.length})</Text>
++          {sorted.map((work) => (
+@@
+-  searchBar: { flexDirection: "row", alignItems: "center", gap: 10 },
+-  input: { flex: 1, fontSize: 15, color: colors.ink, paddingVertical: 10, paddingHorizontal: 14, borderColor: colors.line, borderWidth: 1, backgroundColor: colors.paperStrong },
+-  clear: { color: colors.muted, fontSize: 16, padding: 6 },
+*** End Patch
