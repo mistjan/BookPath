@@ -1,5 +1,6 @@
 ﻿const { getDefaultConfig } = require("expo/metro-config");
 const path = require("path");
+const { resolve } = require("metro-resolver");
 
 const projectRoot = __dirname;
 const workspaceRoot = path.resolve(projectRoot, "../..");
@@ -32,11 +33,17 @@ config.resolver.resolveRequest = (context, moduleName, platform) => {
     };
   }
 
-  if (originalResolve) {
-    return originalResolve(context, moduleName, platform);
+  // Handle absolute or relative paths that might point into the app directory
+  if (moduleName.includes("apps/mobile/node_modules/")) {
+     const normalizedName = moduleName.split("apps/mobile/node_modules/")[1];
+     return (originalResolve || resolve)(context, normalizedName, platform);
   }
-  return context.resolveRequest(context, moduleName, platform);
+
+  // Use the original resolver if it exists, otherwise fall back to the default metro-resolver.
+  // This avoids infinite recursion with context.resolveRequest.
+  return (originalResolve || resolve)(context, moduleName, platform);
 };
+
 
 // node_modules 查找路径
 config.resolver.nodeModulesPaths = [
@@ -44,6 +51,7 @@ config.resolver.nodeModulesPaths = [
   path.resolve(workspaceRoot, "node_modules")
 ];
 
-config.resolver.disableHierarchicalLookup = true;
+config.resolver.disableHierarchicalLookup = false;
+
 
 module.exports = config;

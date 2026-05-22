@@ -6,7 +6,7 @@ buildscript {
     mavenCentral()
   }
   dependencies {
-    classpath('com.android.tools.build:gradle')
+    classpath('com.android.tools.build:gradle:8.13.0')
     classpath('com.facebook.react:react-native-gradle-plugin')
     classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
   }
@@ -22,3 +22,25 @@ allprojects {
 
 apply plugin: "expo-root-project"
 apply plugin: "com.facebook.react.rootproject"
+
+subprojects {
+    plugins.withId("com.facebook.react") {
+        react {
+            def rootNodeModules = rootProject.file("../../../node_modules").absoluteFile
+            def rnDir = new File(rootNodeModules, "react-native")
+            reactNativeDir.set(rnDir)
+
+            def codegenDirFile = new File(rootNodeModules, "@react-native/codegen")
+            if (!codegenDirFile.exists()) {
+                codegenDirFile = new File(rnDir, "node_modules/@react-native/codegen")
+            }
+            if (codegenDirFile.exists()) {
+                codegenDir.set(codegenDirFile)
+            }
+        }
+    }
+}
+
+
+
+
