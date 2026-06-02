@@ -49,3 +49,10 @@ node_modules/
 .env
 
 .env.local
+
+# Local Gradle and bundle outputs
+.gradle/
+apps/mobile/test.bundle
+apps/mobile/test_assets/
+bundle-log-full.txt
+apps/mobile/android/app/kotlin/new.json
